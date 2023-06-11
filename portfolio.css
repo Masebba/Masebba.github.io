@@ -1,0 +1,60 @@
+ <style>
+    body {
+  margin-left: 100px; 
+  margin-right: 100px;
+}
+
+#heading {
+  text-align: center;
+  background-color:rgb(25, 29, 50);
+  color: DodgerBlue;
+
+    }
+#customers td, #customers th, table {
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-collapse: collapse;
+}
+#customers tr:nth-child(even){
+  background-color: #f0dff2f2;
+  
+}
+#customers tr:hover {
+  background-color: #ddfffd;
+  
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 30px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+  
+}
+
+
+table.center {
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+}
+
+h4{
+  background-color: dodgerblue;
+  color: white;
+}
+#contact-heading{
+  font-weight: bold;
+  font-style: italic
+}
+#contact-info{
+    font-weight: normal;
+    font-style: italic;
+    margin-left: 100px;
+}
+    
+</style>
+  
+  
