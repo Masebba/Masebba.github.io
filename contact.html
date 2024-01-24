@@ -1,0 +1,396 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <title>Contact Masebba</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="icon" href="https://i.imgur.com/PI5LP48.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<style>
+  /* style.css */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+  }
+  ul {
+    list-style: none;
+  }
+  .contact-form{
+    padding: 10px;
+    max-width:700px;
+    margin:40px auto;
+    font-family: 'Oswald', sans-serif;
+    justify-content: center;
+    background-color: #f4f4f4;
+  }
+  .need-me{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-top: 20px;
+    letter-spacing:.3em;
+  }
+  .need-me h1{
+    text-shadow: 1px 1px 3px rgba(87, 87, 87, 0.8);
+  }
+  .message-form h2{
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 2px;
+    letter-spacing:.1em;
+  }
+  .contacts{
+    justify-content: center;
+    text-align: center;
+  }
+  .contacts img{
+    max-width: 40px;
+    min-width: 38px;
+    cursor: pointer;
+  }
+  #contacts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px;
+  }
+  #contacts p{
+    font-size: 11px;
+  }
+  .call-me{
+    max-width: 160px;
+    min-width: 155px;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
+  .text-me{
+    max-width: 160px;
+    min-width: 155px;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
+  .whatsapp-me{
+    max-width: 160px;
+    min-width: 155px;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
+  .whatsapp-me:hover, .call-me:hover, .text-me:hover{
+    background: #eeeded;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    transition: all .8s ease-in-out;
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  .whatsapp-me img{
+    max-width: 45px;
+    min-width: 38px;
+  }
+  .social-media img{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    margin-bottom: 5px;
+  }
+  .social-media img:hover{
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.9);
+    background-color: white;
+    border: 3px solid dodgerblue;
+    max-width: 30px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  .send-message{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 10px;
+    max-width:600px;
+    margin:40px auto;
+  }
+  .send-message h1{
+    padding: 5px;
+    font-family: "Oswald", sans-serif;
+    letter-spacing:.2em;
+  }
+  input, textarea {
+    justify-content: center;
+    border: 0;
+    border-radius: 4px;
+    outline:0;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    margin: 1em;
+    font-family: 'Merriweather', sans-serif;
+    resize: none;
+  }
+  .submit {
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #bebebe;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    transition: all .5s ease;
+    color: #4b4b4b;
+    cursor: pointer;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+  }
+  .submit:hover{
+    background: #9f9f9f;
+    color: #101010;
+    transition: all .8s ease-in-out;
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  @media screen and (max-width: 600px) {
+    .need-me{
+      letter-spacing:.1em;
+      font-size: 12px;
+    }
+    .social-media img{
+      margin-bottom: 2px;
+      max-width: 27px;
+      min-width: 26px;
+    }
+    .send-message h1{
+      letter-spacing:.1em;
+      font-size: 15px;
+    }
+    button {
+      font-size: .7rem;
+    }
+  }
+</style>
+
+
+<body>
+<!-- site and application -->
+<header id="nav-menu">
+  <div class="container-one">
+    <div class="nav-start">
+      <a class="logo" href="index.html">
+        <img src="https://i.imgur.com/PI5LP48.png" width="50" height="50" alt="Masebba Logo" />
+      </a>
+      <nav class="menu">
+        <ul class="menu-bar">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-end">
+      <div class="right-container">
+        <a href=" ">
+          <img src="https://i.imgur.com/cVmQ5j1.jpg" width="40" height="40" alt="Masebba image" />
+        </a>
+      </div>
+      <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+        <img src="https://img.icons8.com/?size=1x&id=lgtp4VE6DKYl&format=png" width="45" height="45" alt="menu"/>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<section class="contact-form">
+  <div class="need-me">
+    <h1>Need To Reach Me?</h1>
+  </div>
+
+  <div class="message-form">
+    <div class="contacts">
+      <div id="contacts">
+        <div class="call-me">
+          <a href="tel:+256757466113" target="_blank"><img src="https://img.icons8.com/?size=1x&id=MJnbcVvY6Gur&format=png" alt="Call me"></a>
+          <h2>Call 24/7</h2>
+          <p>+256757466113</p>
+        </div>
+        <div class="text-me">
+          <a href="mailto: masternasser2@gmail.com" target="_blank"><img src="https://img.icons8.com/?size=1x&id=124379&format=png" alt="Text me"></a>
+          <h2>Write to Me</h2>
+          <p>masternasser2@gmail.com</p>
+        </div>
+        <div class="whatsapp-me">
+          <a href="https://wa.me/+256757466113" target="_blank"><img src="https://img.icons8.com/?size=1x&id=klnrW4QjPNvo&format=png" alt="WhatsApp"></a>
+          <h2>WhatsApp Me</h2>
+          <p>+256757466113</p>
+        </div>
+      </div>
+      <div id="social-media">
+        <div class="social-media">
+          <a href="https://www.facebook.com/masebbaa"><img src="https://img.icons8.com/?size=1x&id=uLWV5A9vXIPu&format=png" alt="facebook"></a>
+          <a href="https://www.twitter.com/MA_SE_BBA"><img src="https://img.icons8.com/?size=1x&id=114450&format=png" alt="twitter"></a>
+          <a href="mailto: masternasser2@gmail.com"><img src="https://img.icons8.com/?size=1x&id=63779&format=png" alt="google"></a>
+          <a href="https://github.com/Masebba/Masebba.github.io"><img src="https://img.icons8.com/?size=1x&id=bVGqATNwfhYq&format=png" alt="github"></a>
+          <a href="https://codepen.io/masebba"><img src="https://img.icons8.com/?size=1x&id=38382&format=png" alt="codepen"></a>
+          <a href="#"><img src="https://img.icons8.com/?size=1x&id=M725CLW4L7wE&format=png" alt="discord"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="send-message">
+        <h1>Send a Message</h1>
+        <form action="mailto:masternasser2@gmail.com" method="post" enctype="text/plain">
+            <label for="name"></label><input id="name" class="input" type="text" placeholder="Enter both names..." required>
+            <label for="email"></label><input id="email" name="email" type="email" placeholder="Enter your Email..." required>
+            <label>
+              <textarea cols="56" rows="3" name="comments" placeholder="Write message here" required></textarea>
+            </label>
+              <button type="submit" name="submit" class="submit" value="submit" aria-live="assertive"
+                data-alt-text="Thank you..." data-submit-text="Send Message">Send Message</button>
+        </form>
+      </div>
+
+  </div>
+</section>
+
+
+<section id="footer">
+  <footer class="footer-section">
+    <div id="blocks">
+      <div id="first-block">
+        <div class="footer-logo">
+          <a href="index.html"><img src="https://i.imgur.com/PI5LP48.png" class="img-fluid" alt="footer logo"></a>
+        </div>
+        <div class="footer-text">
+          <p>I am the freelancer you’re looking for. A creative Web Designer and
+            Web Developer who turns ideas into valuable websites for clients like you.
+            Landing Page, eCommerce, Non-Profit, personal blogs, etc.
+          </p>
+        </div>
+        <div class="footer-social-icon">
+          <span>Follow on Socials</span>
+          <a href="https://www.facebook.com/masebbaa"><img src="https://img.icons8.com/?size=1x&id=uLWV5A9vXIPu&format=png" alt="Facebook"></a>
+          <a href="https://twitter.com/MA_SE_BBA" ><img src="https://img.icons8.com/?size=1x&id=114450&format=png" alt="Twitter"></a>
+          <a href="mailto: masternasser2@gmail.com"><img src="https://img.icons8.com/?size=1x&id=63779&format=png" alt="Google"></a>
+          <a href="https://github.com/Masebba/Masebba.github.io">
+                   <img src="https://img.icons8.com/?size=1x&id=bVGqATNwfhYq&format=png" alt="GitHub"></a>
+          <a href="https://codepen.io/masebba"><img src="https://img.icons8.com/?size=1x&id=38382&format=png" alt="codepen"></a>
+        </div>
+      </div>
+      <div id="second-block">
+        <div id="bloc">
+          <div class="first-block">
+            <div class="single-cta">
+              <div class="cta-text">
+                <img src="https://img.icons8.com/?size=1x&id=7891&format=png" alt="find me">
+                <h4>Find Me</h4>
+                <span>masternasser@gmail.com</span>
+              </div>
+            </div>
+            <div class="single-cta">
+              <div class="cta-text">
+                <img src="https://img.icons8.com/?size=1x&id=XP4jN4xCBd2G&format=png" alt="call me">
+                <h4>Call Me</h4>
+                <span>+256757466113</span>
+              </div>
+            </div>
+            <div class="single-cta">
+              <div class="cta-text">
+                <img src="https://img.icons8.com/?size=1x&id=124379&format=png" alt="email me">
+                <h4>Mail Me</h4>
+                <span>masternasser@gmail.com</span>
+              </div>
+            </div>
+          </div>
+            <div class="second-block">
+              <div class="useful-links">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="index.html">My Services</a></li>
+                </ul>
+              </div>
+              <div class="footer-subscribe">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>Don’t miss to subscribe to my new feeds.</p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="mailto: masternasser2@gmail.com">
+                    <label>
+                      <input type="text" placeholder="Email Address">
+                    </label>
+                    <button><i><img src="https://img.icons8.com/?size=1x&id=nnbkrcGxTSm8&format=png" alt="telegram plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+      </div>
+    </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+          <div class="copyright-text">
+              <p>Copyright &copy; 2023, All Right Reserved <a href="contact.html">Masebba +256757466113</a></p>
+          </div>
+            <div class="footer-menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="index.html">Skills</a></li>
+                <li><a href="contact.html">Policy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+      </div>
+    </div>
+  </footer>
+</section>
+
+
+
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
