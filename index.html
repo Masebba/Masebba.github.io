@@ -1,534 +1,886 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <title>Masebba A Nasser</title>
-  <meta name="description" content="Masebba A Nasser is a Web Designer and Web Developer who turns ideas into beautiful websites for campanies like yours.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="Masebba A Nasser">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="icon" href="https://i.imgur.com/PI5LP48.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <meta name="theme-color" content="#fafafa">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>Naanghirisa</title>
 </head>
 
+<style>
+/*my colors
+Background #4D0DA1 , #8C5CE3
+batton #F5B120, #F0A60F
+Heading #FDBB0D
+Sub-heading #BF5DFE, #BD5DFD
 
+Alt
+Background #193EB3 , #1386D7
+batton #30BF15, #3EC715
+Heading #15B0F2, 
+Sub-heading #35CDFF, #30ACEA, #FCAE28
+Other: #FFFFFF
+
+Alt
+Background #193EB1 , #1585D7
+batton #F2A022, #ECA411, #1FCFA8, #14C9A0, #F01109
+Heading #19DBF7, #38C5FD, #F98323, #F23F42, #C15CFF, #F8CF13
+Sub-heading #35CDFF, #30ACEA, #FCAE28
+Other: #FFFFFF
+*/
+
+/*#05214E
+  #2274F2*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #262626;
+  text-decoration: none;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.main-menu a {
+  color: #262626;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 5px;
+}
+.main-menu a:active {
+  background: #f5b120;
+}
+ul {
+  list-style: none;
+}
+.navigation-menu {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Nav */
+.main-nav {
+  background: #f2e2e4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 20px 0;
+  font-size: 13px;
+}
+.main-nav .logo {
+  width: 110px;
+}
+.main-nav ul {
+  display: flex;
+}
+.main-nav ul li {
+  padding: 0 10px;
+}
+.main-nav ul li a {
+  padding-bottom: 5px;
+}
+.main-nav ul li a:hover {
+  border-bottom: 2px solid #e58822;
+}
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  display: none;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 3px 3px;
+  background: #e58822;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 12px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+.dark {
+  color: #fff;
+}
+.dark .btn {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* General over view */
+.over-view {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(110deg, #193eb3 60%, #1386d7 60%);
+  background: linear-gradient(120deg, #520e19 60%, rgba(0, 0, 0, 0) 30%),
+    radial-gradient(farthest-corner at 30% 80%, #e5881f 70%, #c11e2f 70%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 30px;
+  padding-top: 500px;
+  margin-bottom: 80px;
+  color: white;
+  position: relative;
+}
+
+.over-view::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(6, 16, 26, 0.63);
+}
+
+h1 {
+  position: relative;
+  color: #ffffff;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  text-align: center;
+  padding: 0.5em 1.2em;
+  max-width: 75rem;
+}
+.over-view h1 {
+  position: relative;
+  color: #e0e5ec;
+  text-shadow: 1px 1px 7px black;
+}
+.over-view p {
+  position: relative;
+  color: #e0e5ec;
+  margin-top: 20px;
+  text-shadow: 2px 1px 9px black;
+  letter-spacing: 5.3px;
+
+  max-width: 75rem;
+  padding: 0.5em 1.2em;
+}
+.over-view .btn {
+  color: #ffff;
+  margin: 15px;
+  padding: 15px;
+  width: 20%;
+  font-size: 20px;
+}
+.support-me {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 50px;
+  padding: 2px;
+}
+.support-me p {
+  text-shadow: 2px 1px 9px black;
+  padding: 10px;
+  margin-left: 30%;
+  margin-right: 10%;
+  letter-spacing: 2.5px;
+  text-align: right;
+}
+
+button {
+  margin: 20px;
+}
+.custom-btn {
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+@media (max-width: 668px) {
+  .over-view {
+    width: 100%;
+    height: 400px;
+    padding-bottom: 30px;
+    padding-top: 580px;
+    margin-bottom: 70px;
+    color: white;
+    position: relative;
+  }
+  @media (max-width: 468px) {
+    .over-view {
+      padding-top: 650px;
+    }
+    .over-view h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+  .over-view p {
+    letter-spacing: 2.3px;
+  }
+  .support-me {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 50px;
+    padding: 2px;
+  }
+  .support-me p {
+    padding: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: right;
+  }
+
+  button {
+    margin: 20px;
+    align-content: center;
+    align-self: end;
+  }
+  .custom-btn {
+    padding: 10px 50px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .btn-12 {
+    width: 230px;
+    height: 40px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+  }
+}
+
+/* 12 */
+.btn-12 {
+  position: relative;
+  right: 50px;
+  bottom: 10px;
+  border: none;
+  box-shadow: none;
+  width: 230px;
+  height: 60px;
+  line-height: 52px;
+  -webkit-perspective: 230px;
+  perspective: 230px;
+}
+.btn-12 span {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(0deg, #520e19 0%, #c11e2f 100%);
+
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 50px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 0;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.btn-12 span:nth-child(1) {
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12 span:nth-child(2) {
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transform-origin: 50% 50% -20px;
+  -moz-transform-origin: 50% 50% -20px;
+  transform-origin: 50% 50% -20px;
+}
+.btn-12:hover span:nth-child(1) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.btn-12:hover span:nth-child(2) {
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  color: transparent;
+  -webkit-transform: rotateX(-90deg);
+  -moz-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+/* introduction */
+.introduction {
+  margin-left: 5%;
+  flex-wrap: wrap;
+  align-content: center;
+  font-size: 22px;
+  color: #00496f;
+  font-size: 1.5em;
+  text-align: center;
+  max-width: 75rem;
+  margin: auto;
+}
+@media (max-width: 758px) {
+  .introduction {
+    font-size: 1.1em;
+  }
+}
+
+/* projects */
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.22em;
+  margin: 10px 2% 120px 2%;
+  max-width: 75rem;
+  padding: 3em 1.5em;
+  position: relative;
+  margin: auto;
+}
+
+.project-cards img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.project-cards h3 {
+  margin-bottom: 2px;
+}
+
+.project-cards a {
+  display: inline-block;
+  padding-top: 10px;
+  color: #0067b8;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.project-cards a:hover i {
+  margin-left: 10px;
+}
+
+@media (max-width: 888px) {
+  .project-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.22em;
+    margin: 5px 1% 30px 1%;
+    max-width: 75rem;
+    padding: 2em 1.5em;
+  }
+  @media (max-width: 528px) {
+    .project-cards {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 1.22em;
+      margin: 5px 1% 30px 1%;
+      max-width: 75rem;
+      padding: 2em 2em;
+    }
+    .introduction {
+      font-size: 0.9em;
+    }
+  }
+
+  .project-cards img {
+    width: 90%;
+    margin-bottom: 5px;
+  }
+}
+
+/* Join Us */
+.join-us {
+  width: 100%;
+  height: 350px;
+  background: url("https://i.imgur.com/3m3UOFl.png") no-repeat center
+    center/cover;
+  margin-bottom: 20px;
+}
+
+.join-us .content {
+  width: 50%;
+  height: 100%;
+  padding: 50px 10px 30px 30px;
+  background: linear-gradient(110deg, #520e19 60%, #e5881f 60%);
+  opacity: 0.8;
+  color: #e0e5ec;
+  text-shadow: 1px 1px 4px black;
+  padding-left: 10rem;
+}
+.join-us p,
+.carbon p {
+  margin: 10px 0 20px;
+}
+
+@media (max-width: 728px) {
+  .join-us {
+    height: 380px;
+    margin-bottom: 20px;
+  }
+  .join-us .content {
+    width: 50%;
+    height: 100%;
+    padding: 50px 10px 30px 30px;
+    opacity: 0.8;
+  }
+  @media (max-width: 528px) {
+    .join-us {
+      height: 390px;
+      margin-bottom: 50px;
+    }
+    .join-us .content {
+      width: 90%;
+      height: 90%;
+      opacity: 0.7;
+    }
+  }
+  .join-us p,
+  .carbon p {
+    margin: 10px 0 20px;
+    font-size: 14px;
+  }
+}
+
+/* Carbon */
+.carbon {
+  width: 100%;
+  height: 350px;
+  background: url("https://i.imgur.com/ExU6xWJ.jpg") no-repeat center
+    center/cover;
+  padding-left: 10rem;
+}
+
+.carbon .content {
+  width: 55%;
+  padding: 100px 0 0 30px;
+  color: #e0e5ec;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* Links */
+.follow img {
+  align-content: center;
+  width: 30px;
+  hight: 30px;
+  border-radius: 4px;
+  filter: invert(100%);
+}
+.links {
+  background: #f2f2f2;
+  background-image: linear-gradient(to bottom right, #520e19, #c11e2f);
+  background: linear-gradient(70deg, #520e19 70%, rgba(0, 0, 0, 0) 30%),
+    radial-gradient(farthest-corner at 10% 110%, #e5881f 50%, #c11e2f 70%);
+
+  color: #19dbf7;
+  font-size: 14px;
+  padding: 35px 0;
+  margin-top: 100px;
+}
+.links-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.links a {
+  color: #35cdff;
+}
+.links li {
+  line-height: 2.5;
+}
+.footer-inner a {
+  color: #fcae28;
+}
+/* Footer */
+.footer {
+  background: #f2f2f2;
+  background-image: linear-gradient(to bottom right, #520e19, #c11e2f);
+  color: #fcae28;
+  font-size: 12px;
+  padding: 15px 0 1px 0;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer div {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.footer div i {
+  margin-right: 10px;
+}
+
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer li {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+
+  .main-nav ul.right-menu {
+    margin-right: 50px;
+  }
+
+  .main-nav ul.main-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4d0da1;
+    background-image: linear-gradient(to bottom right, #f2f2f2, #f2e2e4);
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px);
+    transition: transform 0.7s ease-in-out;
+    z-index: 1;
+  }
+
+  .main-nav ul.main-menu li {
+    padding: 10px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+  }
+
+  .main-nav ul.main-menu li:last-child {
+    border-bottom: 0;
+  }
+
+  .main-nav ul.main-menu.show {
+    transform: translateX(-20px);
+  }
+
+  .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .xbox .content p {
+    display: none;
+  }
+
+  .xbox .content h2 {
+    margin-bottom: 20px;
+  }
+
+  .carbon .content {
+    width: 85%;
+  }
+
+  .links .links-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .links .links-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .links .links-inner ul {
+    margin-bottom: 20px;
+  }
+}
+
+
+</style>
+
+
+</head>
 
 <body>
-  <!-- site and application -->
-  <header id="nav-menu">
-    <div class="container-one">
-      <div class="nav-start">
-        <a class="logo" href="index.html">
-          <img src="https://i.imgur.com/PI5LP48.png" width="50" height="50" alt="Masebba Logo" />
-        </a>
-        <nav class="menu">
-          <ul class="menu-bar">
-            <li><a class="nav-link" href="index.html">Home</a></li>
-            <li><a class="nav-link" href="projects.html">Projects</a></li>
-            <li><a class="nav-link" href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="nav-end">
-        <div class="right-container">
-          <a href="">
-            <img src="https://i.imgur.com/cVmQ5j1.jpg" width="40" height="40" alt="Masebba" />
+
+  <div class="menu-btn">
+    <img src="https://img.icons8.com/?size=48&id=eofQ1g5BaAx6&format=png" alt="Naanghirisa" class="alt-menu" width="30" height="30">
+  </div>
+
+  <!-- Navigation menu -->
+  <div class="navigation-menu">
+    <nav class="main-nav">
+      <a href="index.html"><img src="https://i.imgur.com/hB1g5ZK.png" alt="Naanghirisa" width="160" height="50"></a>
+
+      <ul class="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">Programs</a></li>
+        <li><a href="donation.html">Impact</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <ul class="right-menu">
+        <li>
+          <a href="index.html">
+            <i><img src="https://img.icons8.com/?size=48&id=TQPOC8XaUqZ0&format=png" alt="Search" class="alt-menu" width="25" height="25"></i>
           </a>
-        </div>
-        <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
-          <img src="https://img.icons8.com/?size=1x&id=lgtp4VE6DKYl&format=png" width="45" height="45" alt="menu"/>
-        </button>
-      </div>
-    </div>
-  </header>
+        </li>
+        <li>
+          <a href="donation.html">
+            <i><img src="https://img.icons8.com/?size=24&id=ghipC2vtrryx&format=png" alt="Donate" class="alt-menu" width="25" height="25"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
+    <!-- General over view -->
+    <header class="over-view">
+      <h1>Changing Life of the Less Privilaged</h1>
+      <p>
+        We focus on small positive changes. That is who we are. We are Naanghirisa
+      </p>
 
-  <main id="main-content">
-    <section id="overview">
-      <div class="overview">
-            <h1>My name is Masebba A. Nasser</h1>
-            <h3>Web Designer & Web Developer </h3>
-            <p>Invest your time and efforts on running your business. Leave the Designing to me.
-            </p>
-      </div>
+      <div class="support-me">
+        <button class="custom-btn btn-12"><span>Thank you!</span><span>Support Us $5</span></button>
 
-      <div class="get-quote">
-          <a href="contact.html">
-          <button class="get-free-quote">
-            Get a Free Quote
-          </button></a>
+        <div id="support-me">
 
-          <a href="contact.html">
-          <button class="lear-more">
-            Learn More
-          </button>
-        </a>
-      </div>
-
-
-      <div class="icon-buttons">
-          <div class="trusted">
-            <img src="https://img.icons8.com/?size=1x&id=odlWsjaUL8mG&format=png" alt="icon">
-              Trusted
-          </div>
-          <div class="experienced">
-            <img src="https://img.icons8.com/?size=1x&id=odlWsjaUL8mG&format=png" alt="icon">
-              Experienced
-          </div>
-          <div class="professional">
-            <img src="https://img.icons8.com/?size=1x&id=odlWsjaUL8mG&format=png" alt="icon">
-              Professional
-          </div>
-      </div>
-    </section>
-
-  <section id="services">
-    <div class="services">
-      <div class="web-design">
-        <div class="description">
-          <img src="https://img.icons8.com/?size=1x&id=9chWbutoYVot&format=png" alt="web design">
-          <h4>WEB DESIGN</h4>
-          <p>UX & UI, Interaction Designs, Mockup, Wire-framing and Prototyping.</p>
-        </div>
-        <div class="counter">
-          <h2>073</h2><h4>Projects Finished</h4>
-        </div>
-      </div>
-
-      <div class="web-development">
-        <div class="description">
-          <img src="https://img.icons8.com/?size=1x&id=v81HcAIQnRw8&format=png" alt="web development">
-          <h4>WEB DEVELOPMENT</h4>
-          <p>Responsive Design, SEO optimization, Analytics, maintenance and Back End management.</p>
-        </div>
-        <div class="counter">
-          <h2>056</h2><h4>Projects Finished</h4>
-        </div>
-      </div>
-
-      <div class="graphic-design">
-        <div class="description">
-          <img src="https://img.icons8.com/?size=1x&id=QVobCUiSKNwK&format=png" alt="graphic design">
-          <h4>GRAPHIC DESIGN</h4>
-          <p>Brochure, Posters and social media posts, Business Card, Flyers, Calendars, Other.</p>
-        </div>
-        <div class="counter">
-          <h2>248</h2><h4>Projects Finished</h4>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-    <section id="about-me">
-      <div id="why-me">
-            <div class="my-image">
-              <img src="https://i.imgur.com/cE5abYw.png" alt="Masebba">
-            </div>
-
-          <div class="accordion">
-            <div class="about-me">
-              <h1>A Little About Me</h1>
-              <p>I am the freelancer you’re looking for. A creative Web Designer and Web Developer who turns ideas into valuable websites for clients like you. I love building stunning websites for various brands (Landing Page, eCommerce, Non-Profit, personal blogs, etc.). Check my Website work here. I am also a Graphics Designer of all types (Calendars, Business cards, Flyers, Banners, Brochures, Posters etc.)</p>
-            </div>
-              <nav class="accordion arrows">
-                <header class="box">
-                  <label for="acc-close" class="box-title">What you need to know</label>
-                </header>
-
-                <input type="radio" name="accordion" id="cb1" />
-                <section class="box">
-                  <label class="box-title" for="cb1">Why Choose Me</label>
-                  <label class="box-close" for="acc-close"></label>
-                  <div class="box-content">
-                    <ul>
-                      <li>I work extremely fast with good custom editing skills.</li>
-                      <li>I have a great design sense for stunning designs.</li>
-                      <li>Quality Assurance</li>
-                      <li>User Interface and User Experience Designer</li>
-                    </ul>
-                  </div>
-                </section>
-
-                <input type="radio" name="accordion" id="cb2" />
-                <section class="box">
-                  <label class="box-title" for="cb2">What else do I provide?</label>
-                  <label class="box-close" for="acc-close"></label>
-                  <div class="box-content">
-                    <ul>
-                      <li>I will write a “Read Me” note to provide you with knowledge on how to use the website.</li>
-                      <li>You will easily edit and modify your website. I will be available for 15 days after the 
-                          project is done to take care of any query. No programming knowledge needed</li>
-                    </ul>
-                  </div>
-                </section>
-                <input type="radio" name="accordion" id="cb3" />
-                <section class="box">
-                  <label class="box-title" for="cb3">You don't have any design Concept?</label>
-                  <label class="box-close" for="acc-close"></label>
-                  <div class="box-content">
-                    <ul>
-                      <li>You don’t have to worry. I will take care it.</li>
-                      <li> I highly recommended that you purchase the domain and hosting by yourself. 
-                          But I can recommend a good domain and hosting providers in can you are unable.</li>
-                    </ul>
-                  </div>
-                </section>
-
-                <input type="radio" name="accordion" id="cb4" />
-                <section class="box">
-                  <label class="box-title" for="cb4">The Other Side of Me</label>
-                  <label class="box-close" for="acc-close"></label>
-                  <div class="box-content">
-                    <ul>
-                      <li>I am a Philanthropist, non-profit volunteer, Social activist.</li>
-                      <li>Course Facilitator at Philanthropy University.</li>
-                    </ul>
-                  </div>
-                </section>
-
-                <input type="radio" name="accordion" id="acc-close" />
-              </nav>
-            </div>
-
-          </div>
-    </section>
-
-    <section id="skills">
-          <div class="skills">
-            <h2>AREAS OF EXPERTISE</h2>
-            <hr>
-            <h3>SOME OF MY SKILLS</h3>
-            <button>
-              <a href="contact.html">Hire Me</a>
-            </button>
-          </div>
-
-      <div class="progress-and-bar">
-          <div id="bar-description">
-              <div class="bar-description">HTML</div>
-              <div class="bar-description">CSS</div>
-              <div class="bar-description">JavaScript</div>
-              <div class="bar-description">Java</div>
-              <div class="bar-description">C</div>
-              <div class="bar-description">PHP</div>
-              <div class="bar-description">MySQL</div>
-              <div class="bar-description">WordPress</div>
-          </div>
-
-          <div class="bars">
-              <div class="progress-bar"><div class="progress" id="progress1"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress2"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress3"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress4"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress5"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress6"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress7"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress8"></div></div>
-          </div>
-      </div>
-    </section>
-
-
-    <section id="my-services">
-      <div class="service">
-        <img src="https://img.icons8.com/?size=1x&id=GKFN2Gk1rPIh&format=png" alt="Services">
-        <h2>My Services</h2>
-        <p>Full website creation, WordPress install, Theme Customization, User-friendly Layout, Fully Responsive, <em><b>Speed
-          optimization, Import Demo Contents, E-commerce by Woo commerce,</b></em> Redesign WordPress</p>
-      </div>
-
-      <div class="service-description">
-        <img src="https://img.icons8.com/?size=1x&id=V9WRlj9DsgiK&format=png" alt="Design">
-        <h2>Web Design</h2>
-        <p>UX & UI, Interaction Designs, Mockup, Wireframing and Prototyping.</p>
-      </div>
-
-      <div class="service-description">
-        <img src="https://img.icons8.com/?size=1x&id=12447&format=png" alt="Development">
-        <h2>Web Development</h2>
-        <p>Responsive Design, SEO optimization, Analytics, maintenance and Back End management.</p>
-      </div>
-
-      <div class="service-description">
-        <img src="https://img.icons8.com/?size=1x&id=vK5is4aqGzbO&format=png" alt="WordPress">
-        <h2>CMS Development</h2>
-        <p>WordPress Expert, Sigma, Installing themes and Plugins, HTML to WordPress, Domain and Host transfer, Mobile Responsiveness.</p>
-      </div>
-
-      <div class="service-description">
-        <img src="https://img.icons8.com/?size=1x&id=9944&format=png" alt="Assistant">
-        <h2>Virtual Assistance</h2>
-        <p>Social media, Data collection nd data mining, create and format Excel sheets, content writing and proofreading, Web research and mail management.</p>
-      </div>
-
-      <div class="service-description">
-        <img src="https://img.icons8.com/?size=1x&id=zm3aaypMjL9X&format=png" alt="Graphics">
-        <h2>Graphic Design</h2>
-        <p>Brochure, Posters and social media posts, Business Card, Flyers, Calendars, Other.</p>
-      </div>
-    </section>
-
-    <section id="recent-works">
-      <h1 style="text-align: center;">RECENT WORKS</h1>
-    <ul class="cards">
-      <li>
-        <a href="naanghirisa.org" class="card">
-          <img src="https://i.imgur.com/9WoY4Sa.png" class="card__image" alt="Naanghirisa" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">Non Profit</h3>
-                <span class="card__status">WordPress & Elementor</span>
-              </div>
-            </div>
-            <p class="card__description">Naanghirisa is a not for profit local NGO that helps
-              less privileged girls get post-primary education</p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="http://masebba.unaux.com/" class="card">
-          <img src="https://i.imgur.com/GzI4V5I.png" class="card__image" alt="Masebba" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">Portfolio</h3>
-                <span class="card__status">HTML, CSS and JS</span>
-              </div>
-            </div>
-            <p class="card__description">This is a WordPress portfolio made two years ago. I have cloned it to form this one</p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://codepen.io/masebba/pen/WNYXrzp" class="card">
-          <img src="https://i.imgur.com/ufszNQn.png" class="card__image" alt="Contact form" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">Contact Form</h3>
-                <span class="card__tagline"></span>
-                <span class="card__status">HTML, CSS and JS</span>
-              </div>
-            </div>
-            <p class="card__description">This is a responsive contact form developed using HTML, CSS and JavaScript</p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="card">
-          <img src="https://i.imgur.com/g8M5S7S.png" class="card__image" alt="eCommerce" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">eCommerce</h3>
-                <span class="card__status">WordPress & Elementor</span>
-              </div>
-            </div>
-            <p class="card__description">This is an eCommerce website developed with WordPress and Elementor</p>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a href="http://groupone.liveblog365.com/admi-pannel.html" class="card">
-          <img src="https://i.imgur.com/reJHYcJ.png" class="card__image" alt="Dashboard" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">Dashboard</h3>
-                <span class="card__status">HTML, CSS and JS</span>
-              </div>
-            </div>
-            <p class="card__description">An extract from an ad space booking system developed with HTML, CSS and JS</p>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://codepen.io/masebba/pen/YzRMGNr" class="card">
-          <img src="https://i.imgur.com/2ftFYuR.png" class="card__image" alt="footer" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">Footer Design</h3>
-                <span class="card__status">HTML, CSS and JS</span>
-              </div>
-            </div>
-            <p class="card__description">An extract from this portfolio developed with HTML, CSS and JS</p>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://codepen.io/masebba/pen/abQBWmR" class="card">
-          <img src="https://i.imgur.com/KRxQpRs.png" class="card__image" alt="About page" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">About Page</h3>
-                <span class="card__status">HTML, CSS and JS</span>
-              </div>
-            </div>
-            <p class="card__description">CSSZEN gerden inspired design implementation</p>
-          </div>
-        </a>
-      </li>
-
-      <li>
-        <a href="ucesco.org" class="card">
-          <img src="https://i.imgur.com/XYWliHo.png" class="card__image" alt="Non-Profit" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">Non-Profit</h3>
-                <span class="card__status">WordPress/Elementor</span>
-              </div>
-            </div>
-            <p class="card__description">Volunteered to implement the new design for the organisan's Website</p>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </section>
-
-
-
-
-  </main>
-
-
-
-<section id="footer">
-  <footer class="footer-section">
-    <div id="blocks">
-      <div id="first-block">
-        <div class="footer-logo">
-          <a href="index.html"><img src="https://i.imgur.com/PI5LP48.png" class="img-fluid" alt="logo"></a>
-        </div>
-        <div class="footer-text">
-          <p>I am the freelancer you’re looking for. A creative Web Designer and
-            Web Developer who turns ideas into valuable websites for clients like you.
-            Landing Page, eCommerce, Non-Profit, personal blogs, etc.
+          <p>
+            Tuition fees, Sanitary pads, Uniforms, Workbooks, Accommodation, Textbooks, Stationary, Scientific Calculators...
           </p>
-        </div>
-        <div class="footer-social-icon">
-          <span>Follow on Socials</span>
-          <a href="https://www.facebook.com/masebbaa"><img src="https://img.icons8.com/?size=1x&id=uLWV5A9vXIPu&format=png" alt="Facebook"></a>
-          <a href="https://twitter.com/MA_SE_BBA" ><img src="https://img.icons8.com/?size=1x&id=114450&format=png" alt="Twitter"></a>
-          <a href="mailto: masternasser2@gmail.com"><img src="https://img.icons8.com/?size=1x&id=63779&format=png" alt="Google"></a>
-          <a href="https://github.com/Masebba/Masebba.github.io">
-                   <img src="https://img.icons8.com/?size=1x&id=bVGqATNwfhYq&format=png" alt="GitHub"></a>
-          <a href="https://codepen.io/masebba"><img src="https://img.icons8.com/?size=1x&id=38382&format=png" alt="codepen"></a>
+
         </div>
       </div>
-      <div id="second-block">
-        <div id="bloc">
-          <div class="first-block">
-            <div class="single-cta">
-              <div class="cta-text">
-                <img src="https://img.icons8.com/?size=1x&id=7891&format=png" alt="find me">
-                <h4>Find Me</h4>
-                <span>masternasser@gmail.com</span>
-              </div>
-            </div>
-            <div class="single-cta">
-              <div class="cta-text">
-                <img src="https://img.icons8.com/?size=1x&id=XP4jN4xCBd2G&format=png" alt="call me">
-                <h4>Call Me</h4>
-                <span>+256757466113</span>
-              </div>
-            </div>
-            <div class="single-cta">
-              <div class="cta-text">
-                <img src="https://img.icons8.com/?size=1x&id=124379&format=png" alt="email me">
-                <h4>Mail Me</h4>
-                <span>masternasser@gmail.com</span>
-              </div>
-            </div>
+    </header>
+
+    <!-- Introduction  -->
+    <div class="introduction">
+      <h2>A Look at Some of Naanghirisa Activities</h2>
+      <p> The relevance of Naanghirisa towards the development of our community is largely seen in its key activities; The PASS Project, Butaleja Going Green, NSACCO, The Scholarship Scheme among others.</p>
+    </div>
+
+    <!-- projects -->
+    <section class="project-cards">
+
+      <div>
+        <img src="https://i.imgur.com/bd0QfKi.jpg" alt="">
+        <h3>The PASS Project</h3>
+        <p>
+          Naanghirisa chose education as one of its priority areas of focus and developed the PASS project (Promoting Academic Success in Schools). The goal of this project is to contribute to the improvement of education standards in Butaleja in general.
+        </p>
+        <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+        <img src="https://i.imgur.com/r3pRbDy.png" alt="" />
+        <h3>Scholarship Initiative</h3>
+        <p>
+          The Dr. Margeret Munghereera Scolarship for Girl Child aims to support the education of bright but disadvantaged girls from who are otherwise, unable to progress with studies
+        </p>
+        <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+        <img src="https://i.imgur.com/aRwO0iw.jpg" alt="" />
+        <h3>Butaleja Going Green</h3>
+        <p>
+          Going Green handles enviroment protection through advocacy for Tree Planting. Going Green is implemented in schools through the appointed schools ambassadors. The idea is to make Butaleja green.
+        </p>
+        <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+        <img src="https://i.imgur.com/TpHqM6T.jpg" alt="" />
+        <h3>Networking and Fundraising</h3>
+        <p> Networking aims at bringing all together stakeholders to know each other, share different opportunities and boosting the afromentioned projects and making sure they operate smoothly.
+        </p>
+        <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </section>
+
+    <!-- Join us -->
+    <section class="join-us">
+      <div class="content">
+        <h2>Join our Volunteer team</h2>
+        <p>Naanghirisa is possible, thanks to the kind people who support our nonprofit. If you would want to be part in helping disadvantaged girls and boys get educatin, here is how you can support our mission.</p>
+        <!-- <a href="#" class="btn">
+            Join Us <i class="fas fa-chevron-right"></i>
+          </a>-->
+        <button class="custom-btn btn-12"><span>Welcome!</span><span>Join Us</span></button>
+      </div>
+    </section>
+
+    <!-- Project 2 -->
+    <section class="project-cards">
+      <div>
+        <img src="https://i.imgur.com/J4QruAB.png" alt="" />
+        <h3>Butaleja Girls' Camp</h3>
+        <p>
+          Started, and implemeted by Naanghirisa ladies league, the girls' camp is an annual seven days event that empowers girls with soft and hard skills during the third term holiday period, often in December.
+        </p>
+        <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+        <img src="https://i.imgur.com/njyfIyC.jpg" alt="" />
+        <h3>Health Camp</h3>
+        <p>
+          We partner with other local and international NGOs to create awareness on health matters and create quick solutions within Butaleja district.
+        </p>
+        <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+        <img src="https://i.imgur.com/oeDCT3E.png" alt="" />
+        <h3>Other Activities</h3>
+        <p>
+          Led a fundraising capaign to collect and deliver mattresses and other equipments for Busolwe Hospital in 2017, where we raised 54 mattress for the hospital, deliery beds and Scanner.
+        </p>
+        <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+        <img src="https://i.imgur.com/FjX9v3T.jpg" alt="" />
+        <h3 style="background-color:Orange; text-align: center; color: white;">WE NEED YOUR HELP</h3>
+        <p style="background-color:Orange; text-align: center; padding: 10px;">
+          <b>Let us provide equal opportunities for the unprivileged together. Your help can be in cash or kind. This is why we request you to give us a Donation, become one of our volunters or both.</b>
+        </p>
+        <a href="#" style="text-align: center;">DONATE TO US <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </section>
+
+    <!-- Carbon -->
+    <section class="carbon dark">
+      <div class="content">
+        <h2>Butaleja in Public Domain</h2>
+        <p>Poverty, HIV and AIDs, early marriage, teenage pregnancies, gender baser violene and low participation in secondary eduction are some of the situtations attributed to Butleja District</p>
+        <!--<a href="#" class="btn">
+              Learn More <i class="fas fa-chevron-right"></i>
+            </a>-->
+        <button class="custom-btn btn-12"><span>Click Here!</span><span>Learn More</span></button>
+      </div>
+    </section>
+
+    <!-- Links -->
+    <section class="links">
+      <div class="links-inner">
+        <ul>
+          <li>
+            <h3>Contact Us</h3>
+          </li>
+
+          <div class="follow">
+            <li><a href="#">
+                <img src="https://img.icons8.com/?size=30&id=59780&format=png" alt="Facebook"></a></li>
+            <li><a href="#">
+                <img src="https://img.icons8.com/?size=30&id=60014&format=png" alt="Twitter"></a></li>
+            <li><a href="#">
+                <img src="https://img.icons8.com/?size=24&id=yxl4mWkjeDCS&format=png" alt="Gmail"></a></li>
+            <li><a href="#">
+                <img src="https://img.icons8.com/?size=30&id=UIVkKyEBYCMs&format=png" alt="Call"></a></li>
+            <li><a href="#">
+                <img src="https://img.icons8.com/?size=30&id=62855&format=png" alt="WhatsApp"></a></li>
           </div>
-            <div class="second-block">
-              <div class="useful-links">
-                <div class="footer-widget-heading">
-                  <h3>Useful Links</h3>
-                </div>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="projects.html">Projects</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="index.html">My Services</a></li>
-                </ul>
-              </div>
-              <div class="footer-subscribe">
-                <div class="footer-widget-heading">
-                  <h3>Subscribe</h3>
-                </div>
-                <div class="footer-text mb-25">
-                  <p>Don’t miss to subscribe to my new feeds.</p>
-                </div>
-                <div class="subscribe-form">
-                  <form action="mailto: masternasser2@gmail.com">
-                    <label>
-                      <input type="text" placeholder="Email Address">
-                    </label>
-                    <button><i><img src="https://img.icons8.com/?size=1x&id=nnbkrcGxTSm8&format=png" alt="telegram plane"></i></button>
-                  </form>
-                </div>
-              </div>
-            </div>
+
+        </ul>
+        <ul>
+          <li>
+            <h3>Quick Links</h3>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Programs</a></li>
+          <li><a href="#">What we do</a></li>
+          <li><a href="#">Donate</a></li>
+        </ul>
+        <ul>
+          <li>
+            <h3>Address</h3>
+          </li>
+          <li><a href="#">Butaleja District</a></li>
+          <li><a href="#">Office of the DCDO</a></li>
+          <li><a href="#">naanghirisa@gmail.com</a></li>
+          <li><a href="#">+256757466113</a></li>
+          <li><a href="#">+256751002010</a></li>
+        </ul>
+        <ul>
+          <li>
+            <h3>Recent Posts</h3>
+          </li>
+          <li><a href="#">PASS</a></li>
+          <li><a href="#">Going Green</a></li>
+          <li><a href="#">Health</a></li>
+          <li><a href="#">Girl's Camp</a></li>
+          <li><a href="#">Scholarship</a></li>
+        </ul>
 
       </div>
-    </div>
-    </div>
-    <div class="copyright-area">
-      <div class="container">
-          <div class="copyright-text">
-              <p>Copyright &copy; 2023, All Right Reserved <a href="contact.html">Masebba +256757466113</a></p>
-          </div>
-            <div class="footer-menu">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="index.html">Skills</a></li>
-                <li><a href="contact.html">Policy</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div><i class="fas fa-globe fa-2x"></i> Home Address: <a href="https://www.butaleja.go.ug/"><b>(Butaleja)</b></a></div>
+        <ul>
+          <li><a href="#">Contact Naanghirisa</a></li>
+          <li><a href="#">Privacy & cookies</a></li>
+          <li><a href="#">&copy;Naanghirisa 2016</a></li>
+        </ul>
       </div>
-    </div>
-  </footer>
-</section>
+    </footer>
 
-
-
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <script>
+        document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+    </script>
 </body>
 
 </html>
