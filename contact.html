@@ -192,6 +192,247 @@
       font-size: .7rem;
     }
   }
+
+
+  
+
+  /*--------footer------*/
+#footer{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+  margin-top: 50px;
+}
+#blocks{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-top: 50px;
+}
+#first-block{
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+}
+.footer-social-icon img{
+  max-width: 30px;
+}
+#first-block img{
+  background-color: #f1f0f0;
+}
+#second-block{
+  width: 70%;
+  margin-left: 10px;
+}
+.first-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  border-bottom: 1px solid #646363;
+  margin-left: 10px;
+}
+.second-block{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  padding: 40px 5px 10px 5px;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.footer-subscribe{
+  width: 60%;
+  height: auto;
+  padding: 5px;
+  margin-left: 2%;
+  margin-right: 4%;
+  text-align: center;
+}
+.useful-links{
+  width: 30%;
+  height: auto;
+  padding: 5px;
+  margin-right: 2%;
+  text-align: center;
+  justify-content: left;
+  border-right: 1px solid #ff5e14;
+  border-left: 1px solid #ff5e14;
+}
+
+.footer-logo img,
+.cta-text img,
+.footer-social-icon img{
+  background-color: #757575;
+  border-radius: 50%;
+}
+.footer-section a{
+  text-decoration: none;
+  color: #757575;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-logo{
+  margin-bottom: 20px;
+}
+.footer-logo img {
+  max-width: 70px;
+}
+.footer-text p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 0;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 1px;
+  border: 1px solid #ff5e14;
+  top: 0;
+  cursor: pointer;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #646363;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 1px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #b7b7b7;
+}
+
+
+@media screen and (max-width: 600px) {
+  .footer-social-icon img{
+    max-width: 30px;
+  }
+  .footer-logo img{
+    max-width: 45px;
+  }
+  .footer-text p {
+    padding: 0;
+  }
+  #blocks{
+    display: flex;
+    flex-direction: column;
+  }
+  #first-block{
+    width: 100%;
+    padding: 20px;
+  }
+  .first-block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20%;
+  }
+  .first-block img{
+    max-width: 30px;
+  }
+  .cta-text h4 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .cta-text span{
+    font-size: 12px;
+  }
+  .second-block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .footer-subscribe{
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    margin-right: 0;
+  }
+  .useful-links{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin-right: 0;
+  }
+  .useful-links h3{
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
 </style>
 
 
