@@ -20,6 +20,7 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 <style>
+
   * {
   margin: 0;
   padding: 0;
@@ -27,7 +28,7 @@
   font-family: "Inter", sans-serif;
 }
 html {
-  color: #F5F5F5;
+  color: #696969;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -58,9 +59,9 @@ textarea {
   }
   body {
     font-family: inherit;
-    color: #F5F5F5;
+    color: #9400D3;
     letter-spacing: -0.4px;
-    background: linear-gradient(to top, #3204fdba, rgba(50, 4, 253, 0.73)), url(https://i.imgur.com/rDsvgUT.png) no-repeat top center fixed;
+    background: linear-gradient(to top, #F0FFFF, #F0FFFF), url(https://i.imgur.com/rDsvgUT.png) no-repeat top center fixed;
     background-size: cover;
     padding: 0;
     margin: 0;
@@ -72,12 +73,14 @@ textarea {
     justify-content: center;
   }
 }
+
+
 .menu ul {
     list-style: none;
   }
 .menu a {
     text-decoration: none;
-    color: inherit;
+    color: inherit;  
   }
   .nav-link {
     border: none;
@@ -92,7 +95,7 @@ textarea {
     padding: 0.1rem;
     margin-left: 1rem;
     border: none;
-    background-color: transparent;
+    background: transparent;
     cursor: pointer;
     color: inherit;
     align-items: center;
@@ -115,7 +118,7 @@ textarea {
   .menu {
     position: relative;
     background: transparent;
-    color: white;
+    color: MidnightBlue;
   }
   .menu-bar .nav-link {
     font-size: 1rem;
@@ -124,10 +127,14 @@ textarea {
     min-width: 60px;
     margin: 0 0.6rem;
     font-weight: bold;
+    padding: 7px 1px;
+    border-radius: 5px;
+    padding: 6px 10px;
   }
   .menu-bar .nav-link:hover,
   .dropdown-link:hover {
-    color: var(--primary-color);
+    color: LightSteelBlue;
+    background: MidnightBlue;
   }
   .nav-start, .nav-end, .menu-bar,
   .right-container {
@@ -139,10 +146,14 @@ textarea {
     align-items: center;
     column-gap: 1.5rem;
     background: transparent;
+    border-radius: 50%;
   }
   .right-container img {
     border-radius: 50%;
+    background: trasparent;
   }
+ 
+
   @media (max-width: 650px) {
     #hamburger {
       display: block;
@@ -163,7 +174,7 @@ textarea {
       min-height: 18vh;
       width: 30vw;
       background-color: #08073a;
-      color: #ffffff;
+      color: #2F4F4F;
     }
     .menu.show, .active {
       display: block;
@@ -196,17 +207,17 @@ textarea {
   #overview {
     display: grid;
     text-align: center;
-    color: white;
+    color: #2F4F4F;
     overflow: hidden;
   }
   #overview h1 {
     font-size: 3.6vw;
-    text-shadow: 1px 1px 3px rgb(44, 43, 43);
+    text-shadow: 1px 1px 1px rgb(44, 43, 43);
   }
   #overview h3{
     margin-bottom: 30px;
     font-size: 2.1vw;
-    text-shadow: 1px 1px 3px rgb(44, 43, 43);
+    text-shadow: 1px 1px 0px rgb(44, 43, 43);
   }
 #overview p{
   font-size: 0.9rem;
@@ -231,8 +242,8 @@ textarea {
     margin-top: 50px;
     border: none;
     border-radius: 25px;
-    background-color: white;
-    color: #0b03fc;
+    background-color: MidnightBlue;
+    color: LightSteelBlue;
     padding: 15px 30px;
     cursor: pointer;
   }
@@ -1044,7 +1055,7 @@ footer ul {
     font-weight: 600;
   }
 }
-
+  
 </style>
 
 
@@ -1067,7 +1078,7 @@ footer ul {
       <div class="nav-end">
         <div class="right-container">
           <a href="">
-            <img src="https://i.imgur.com/cVmQ5j1.jpg" width="40" height="40" alt="Masebba" />
+            <img src="https://i.imgur.com/cVmQ5j1.jpg" width="40" height="40" border-radius="50%" alt="Masebba" />
           </a>
         </div>
         <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
