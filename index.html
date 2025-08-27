@@ -1,9 +1,11 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
   <meta charset="utf-8">
   <title>Masebba A Nasser</title>
-  <meta name="description" content=" Masebba A Nasser is a Web Designer and Web Developer who turns ideas into beautiful websites for companies like yours.">
+  <meta name="description"
+    content=" Masebba A Nasser is a Web Designer and Web Developer who turns ideas into beautiful websites for companies like yours.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="Masebba A Nasser">
@@ -20,29 +22,37 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 <style>
-
   * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-}
-html {
-  color: #696969;
-  font-size: 1em;
-  line-height: 1.4;
-}
-audio, canvas, iframe, img, svg, video {
-  vertical-align: middle;
-}
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-textarea {
-  resize: vertical;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+
+  html {
+    color: #696969;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  textarea {
+    resize: vertical;
+  }
 
   :root {
     --dark-grey: #333333;
@@ -53,10 +63,11 @@ textarea {
     --white: white;
     --border: 1px solid var(--light-grey);
     --shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     --surface-color: #e8e8e8;
     --curve: 40;
   }
+
   body {
     font-family: inherit;
     color: #9400D3;
@@ -66,22 +77,25 @@ textarea {
     padding: 0;
     margin: 0;
   }
-@media screen and (max-width: 600px) {
-  #main-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+  @media screen and (max-width: 600px) {
+    #main-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
-}
 
 
-.menu ul {
+  .menu ul {
     list-style: none;
   }
-.menu a {
+
+  .menu a {
     text-decoration: none;
-    color: inherit;  
+    color: inherit;
   }
+
   .nav-link {
     border: none;
     background-color: transparent;
@@ -100,10 +114,12 @@ textarea {
     color: inherit;
     align-items: center;
   }
+
   .logo {
     margin-right: 1.3rem;
     border-radius: 50%;
   }
+
   .container-one {
     display: flex;
     background-color: transparent;
@@ -115,11 +131,13 @@ textarea {
     border-bottom: none;
     margin-bottom: 100px;
   }
+
   .menu {
     position: relative;
     background: transparent;
     color: MidnightBlue;
   }
+
   .menu-bar .nav-link {
     font-size: 1rem;
     letter-spacing: -0.6px;
@@ -131,16 +149,21 @@ textarea {
     border-radius: 5px;
     padding: 6px 10px;
   }
+
   .menu-bar .nav-link:hover,
   .dropdown-link:hover {
     color: LightSteelBlue;
     background: MidnightBlue;
   }
-  .nav-start, .nav-end, .menu-bar,
+
+  .nav-start,
+  .nav-end,
+  .menu-bar,
   .right-container {
     display: flex;
     align-items: center;
   }
+
   .right-container {
     display: flex;
     align-items: center;
@@ -148,24 +171,28 @@ textarea {
     background: transparent;
     border-radius: 50%;
   }
+
   .right-container img {
     border-radius: 50%;
     background: trasparent;
   }
- 
+
 
   @media (max-width: 650px) {
     #hamburger {
       display: block;
     }
+
     .container-one {
       padding: 1.2rem;
     }
-    #hamburger img{
+
+    #hamburger img {
       border-radius: 50%;
       width: 50px;
       height: 50px;
     }
+
     .menu {
       display: none;
       position: absolute;
@@ -176,9 +203,12 @@ textarea {
       background-color: #08073a;
       color: #2F4F4F;
     }
-    .menu.show, .active {
+
+    .menu.show,
+    .active {
       display: block;
     }
+
     .menu-bar {
       display: flex;
       flex-direction: column;
@@ -186,6 +216,7 @@ textarea {
       row-gap: 0.6rem;
       padding: 1rem;
     }
+
     .menu-bar .nav-link {
       display: flex;
       justify-content: space-between;
@@ -193,7 +224,9 @@ textarea {
       font-weight: 400;
       font-size: 1.2rem;
       margin: 0;
-    }}
+    }
+  }
+
   @media (max-width: 400px) {
     .right-container {
       display: none;
@@ -202,7 +235,7 @@ textarea {
 
 
 
-/*------main content-----*/
+  /*------main content-----*/
 
   #overview {
     display: grid;
@@ -210,35 +243,42 @@ textarea {
     color: #2F4F4F;
     overflow: hidden;
   }
+
   #overview h1 {
     font-size: 3.6vw;
     text-shadow: 1px 1px 1px rgb(44, 43, 43);
   }
-  #overview h3{
+
+  #overview h3 {
     margin-bottom: 30px;
     font-size: 2.1vw;
     text-shadow: 1px 1px 0px rgb(44, 43, 43);
   }
-#overview p{
-  font-size: 0.9rem;
-}
-.get-quote{
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (max-width: 400px) {
-  .get-quote{
+
+  #overview p {
+    font-size: 0.9rem;
+  }
+
+  .get-quote {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
   }
-  .get-free-quote{
-    margin-right: 1px;
+
+  @media screen and (max-width: 400px) {
+    .get-quote {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .get-free-quote {
+      margin-right: 1px;
+    }
   }
-}
-.get-quote button {
+
+  .get-quote button {
     margin-top: 50px;
     border: none;
     border-radius: 25px;
@@ -247,36 +287,42 @@ textarea {
     padding: 15px 30px;
     cursor: pointer;
   }
-.get-quote button:hover {
-  background-color: #d5d4d4;
-  color: #2b26ff;
-}
-.get-quote a:hover{
-  background: none;
-}
-.get-free-quote{
-  margin-right: 50px;
-}
+
+  .get-quote button:hover {
+    background-color: #d5d4d4;
+    color: #2b26ff;
+  }
+
+  .get-quote a:hover {
+    background: none;
+  }
+
+  .get-free-quote {
+    margin-right: 50px;
+  }
 
 
-.icon-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  font-weight: bold;
-  font-size: 17px;
-  margin: 50px 15px 50px 15px;
-  justify-content: center;
-}
-.trusted{
-  margin-right: 60px;
-  padding-bottom: 15px;
-}
-.experienced{
-  margin-right: 60px;
-  padding-bottom: 15px;
-}
-  .icon-buttons img{
+  .icon-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 50px 15px 50px 15px;
+    justify-content: center;
+  }
+
+  .trusted {
+    margin-right: 60px;
+    padding-bottom: 15px;
+  }
+
+  .experienced {
+    margin-right: 60px;
+    padding-bottom: 15px;
+  }
+
+  .icon-buttons img {
     width: 25px;
     height: 25px;
     background-color: #b3d4fc;
@@ -290,27 +336,35 @@ textarea {
   }
 
   /*--------services section-------*/
-  #services{
+  #services {
     background-color: transparent;
     margin: 200px 0 50px 0;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     text-align: center;
   }
-  .services{
+
+  .services {
     display: flex;
     flex-wrap: wrap;
     color: black;
     margin: 0 120px 0 120px;
   }
-.web-design:hover, .web-design:active,
-.web-development:hover, .web-development:active,
-.graphic-design:hover, .graphic-design:active{
-  background-color: #e7e6e6;
-}
-#services:hover, #services:active {
-  background-color: rgba(11, 3, 252, 0.57);
-}
-  .web-design{
+
+  .web-design:hover,
+  .web-design:active,
+  .web-development:hover,
+  .web-development:active,
+  .graphic-design:hover,
+  .graphic-design:active {
+    background-color: #e7e6e6;
+  }
+
+  #services:hover,
+  #services:active {
+    background-color: rgba(11, 3, 252, 0.57);
+  }
+
+  .web-design {
     background-color: white;
     padding: 15px;
     margin: -150px 20px 70px 20px;
@@ -318,7 +372,8 @@ textarea {
     width: 320px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   }
-  .web-development{
+
+  .web-development {
     background-color: white;
     padding: 15px;
     margin: -150px 20px 70px 20px;
@@ -326,7 +381,8 @@ textarea {
     width: 320px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   }
-  .graphic-design{
+
+  .graphic-design {
     background-color: white;
     padding: 15px;
     margin: -150px 20px 70px 20px;
@@ -334,390 +390,457 @@ textarea {
     width: 320px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   }
-  .description{
+
+  .description {
     display: block;
     border: 1px solid #0b03fc;
     border-radius: 7px;
     padding: 15px;
     margin: 20px 20px 20px 20px;
   }
-  .description img{
+
+  .description img {
     width: 35px;
     height: 35px;
     border: 1px solid #0b03fc;
     border-radius: 5px;
 
   }
-  .description h4{
+
+  .description h4 {
     font-weight: bold;
     font-size: 18px;
     padding-bottom: 20px;
     padding-top: 10px;
   }
+
   .counter h2 {
     font-size: 38px;
     color: #bbbaba;
   }
-  .counter{
+
+  .counter {
     padding-bottom: 30px;
   }
-@media screen and (max-width: 600px) {
-  .services{
-    border: 1px solid #da9501;
-    border-radius: 7px;
-    padding: 3px;
-    margin: 5px;
-    justify-content: center;
-  }
-  .description{
-    display: block;
-    border: 1px solid #0b03fc;
-    border-radius: 7px;
-    padding: 5px;
-    margin: 2px;
 
+  @media screen and (max-width: 600px) {
+    .services {
+      border: 1px solid #da9501;
+      border-radius: 7px;
+      padding: 3px;
+      margin: 5px;
+      justify-content: center;
+    }
+
+    .description {
+      display: block;
+      border: 1px solid #0b03fc;
+      border-radius: 7px;
+      padding: 5px;
+      margin: 2px;
+
+    }
+
+    .description h4 {
+      font-weight: bold;
+      font-size: 15px;
+      padding-bottom: 20px;
+      padding-top: 10px;
+    }
+
+    .counter h2 {
+      font-size: 30px;
+      color: #bbbaba;
+    }
+
+    .counter {
+      padding-bottom: 80px;
+    }
   }
-  .description h4{
-    font-weight: bold;
-    font-size: 15px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-  }
-  .counter h2 {
-    font-size: 30px;
-    color: #bbbaba;
-  }
-  .counter{
-    padding-bottom: 80px;
-  }
-}
 
 
-/*---------about me-------------*/
-.about-me{
-  color: darkblue;
-  padding: 0 0 2vw 0;
-  text-align: center;
-}
-.about-me p{
-  text-align: justify;
-}
-#why-me{
-  display: flex;
-  flex-flow: row;
-  flex-wrap: wrap;
-  padding: 1px 30px 5px 80px;
-}
-.my-image{
-  background-color: #08073a;
-  border-radius: 35%;
-  width: 35vw;
-  height: 30vw;
-  margin-bottom: 10%;
-  margin-top: 20%;
-  box-shadow: 2px 2px 8px rgb(17, 243, 225);
-}
-.my-image img{
-  width: 28vw;
-  height: auto;
-  border-radius: 15%;
-  border-bottom: #11f3e1 1px solid;
-  margin-top: -30%;
-  margin-bottom: 10px;
-  margin-left: 10%;
-  mso-border-shadow: yes;
-}
-#accordion {
-  margin: 0;
-  padding: 10px;
-  display: flex;
-  background: #f2f2f2;
-  color: rgb(8, 7, 58);
-  font-family: 'Roboto', sans-serif;
-}
-.accordion {
-  margin: auto;
-  width: 45vw;
-}
-.accordion input {
-  display: none;
-}
-.box {
-  position: relative;
-  background: white;
-  height: 54px;
-  transition: all 1s ease-in-out;
-}
-.box::before {
-  content: '';
-  position: absolute;
-  display: block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  pointer-events: none;
-}
-header.box {
-  background: #08073a;
-  z-index: 100;
-  cursor: initial;
-  box-shadow: 0 -1px 0 #e5e5e5,0 0 2px -2px rgba(0,0,0,.12),0 2px 4px -4px rgba(0,0,0,.24);
-}
-header .box-title {
-  margin: 0;
-  font-weight: normal;
-  font-size: 15pt;
-  color: white;
-  cursor: initial;
-}
-.box-title {
-  width: calc(100% - 40px);
-  height: 64px;
-  line-height: 64px;
-  padding: 0 20px;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
-}
-.box-content {
-  width: calc(100% - 40px);
-  padding: 30px 20px;
-  font-size: 11pt;
-  color: rgb(8, 7, 58);
-  display: none;
-  margin-left: 20px;
-}
-.box-close {
-  position: absolute;
-  height: 64px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-  display: none;
-}
-input:checked + .box {
-  height: auto;
-  margin: 16px 0;
-  box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
-}
-input:checked + .box .box-title {
-  border-bottom: 1px solid rgb(11, 3, 252);
-}
-input:checked + .box .box-content,
-input:checked + .box .box-close {
-  display: inline-block;
-}
-.arrows section .box-title {
-  padding-left: 44px;
-  width: calc(100% - 64px);
-}
-.arrows section .box-title:before {
-  position: absolute;
-  display: block;
-  content: '\203a';
-  font-size: 18pt;
-  left: 20px;
-  top: -2px;
-  transition: transform .15s ease-in-out;
-  color: rgb(8, 7, 58);
-}
-input:checked + section.box .box-title:before {
-  transform: rotate(90deg);
-}
-@media screen and (max-width: 600px) {
-  .accordion {
-    margin: 0;
-    width: 100%;
-    justify-content: center;
-    justify-items: center;
-    padding: 0;
-  }
-  .box {
-    height: 54px;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  .box-title{
-    font-size: 14px;
-    text-wrap: normal;
-    padding: 0;
-    margin: 0;
+  /*---------about me-------------*/
+  .about-me {
+    color: darkblue;
+    padding: 0 0 2vw 0;
     text-align: center;
-    line-height: normal;
   }
+
+  .about-me p {
+    text-align: justify;
+  }
+
+  #why-me {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding: 1px 30px 5px 80px;
+  }
+
+  .my-image {
+    background-color: #08073a;
+    border-radius: 35%;
+    width: 35vw;
+    height: 30vw;
+    margin-bottom: 10%;
+    margin-top: 20%;
+    box-shadow: 2px 2px 8px rgb(17, 243, 225);
+  }
+
+  .my-image img {
+    width: 28vw;
+    height: auto;
+    border-radius: 15%;
+    border-bottom: #11f3e1 1px solid;
+    margin-top: -30%;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    mso-border-shadow: yes;
+  }
+
+  #accordion {
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    background: #f2f2f2;
+    color: rgb(8, 7, 58);
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .accordion {
+    margin: auto;
+    width: 45vw;
+  }
+
+  .accordion input {
+    display: none;
+  }
+
+  .box {
+    position: relative;
+    background: white;
+    height: 54px;
+    transition: all 1s ease-in-out;
+  }
+
+  .box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+  }
+
+  header.box {
+    background: #08073a;
+    z-index: 100;
+    cursor: initial;
+    box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px -2px rgba(0, 0, 0, .12), 0 2px 4px -4px rgba(0, 0, 0, .24);
+  }
+
   header .box-title {
     margin: 0;
-    font-size: 12pt;
+    font-weight: normal;
+    font-size: 15pt;
     color: white;
     cursor: initial;
   }
-  #why-me {
-    justify-content: center;
-    margin: 10px;
-    padding: 0;
+
+  .box-title {
+    width: calc(100% - 40px);
+    height: 64px;
+    line-height: 64px;
+    padding: 0 20px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
-  .my-image{
-    justify-content: center;
+
+  .box-content {
+    width: calc(100% - 40px);
+    padding: 30px 20px;
+    font-size: 11pt;
+    color: rgb(8, 7, 58);
+    display: none;
+    margin-left: 20px;
   }
-  .accordion{
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+
+  .box-close {
+    position: absolute;
+    height: 64px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
   }
-  .about-me{
-    justify-content: center;
-    margin: 10px;
-    padding: 0;
+
+  input:checked+.box {
+    height: auto;
+    margin: 16px 0;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
   }
-  .about-me h1{
-    font-size: 20px;
-    margin: 0;
-    padding: 5px;
+
+  input:checked+.box .box-title {
+    border-bottom: 1px solid rgb(11, 3, 252);
   }
-  .about-me p{
-    font-size: 12px;
+
+  input:checked+.box .box-content,
+  input:checked+.box .box-close {
+    display: inline-block;
   }
-}
+
+  .arrows section .box-title {
+    padding-left: 44px;
+    width: calc(100% - 64px);
+  }
+
+  .arrows section .box-title:before {
+    position: absolute;
+    display: block;
+    content: '\203a';
+    font-size: 18pt;
+    left: 20px;
+    top: -2px;
+    transition: transform .15s ease-in-out;
+    color: rgb(8, 7, 58);
+  }
+
+  input:checked+section.box .box-title:before {
+    transform: rotate(90deg);
+  }
+
+  @media screen and (max-width: 600px) {
+    .accordion {
+      margin: 0;
+      width: 100%;
+      justify-content: center;
+      justify-items: center;
+      padding: 0;
+    }
+
+    .box {
+      height: 54px;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .box-title {
+      font-size: 14px;
+      text-wrap: normal;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+      line-height: normal;
+    }
+
+    header .box-title {
+      margin: 0;
+      font-size: 12pt;
+      color: white;
+      cursor: initial;
+    }
+
+    #why-me {
+      justify-content: center;
+      margin: 10px;
+      padding: 0;
+    }
+
+    .my-image {
+      justify-content: center;
+    }
+
+    .accordion {
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .about-me {
+      justify-content: center;
+      margin: 10px;
+      padding: 0;
+    }
+
+    .about-me h1 {
+      font-size: 20px;
+      margin: 0;
+      padding: 5px;
+    }
+
+    .about-me p {
+      font-size: 12px;
+    }
+  }
 
 
-/*progress bars*/
-#skills {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  color: black;
-  padding: 10px 0 80px 13%;
-}
-.skills{
-  text-align: right;
-  line-height: 50px;
-}
-.skills a {
-  background-color: #070379;
-  color: darkblue;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 30px;
-}
-a:hover, a:active {
-  background-color: #08073a;
-}
-.skills button{
-  border-radius: 30px;
-  border: none;
-}
-.progress-and-bar{
-  display: flex;
-  text-align: right;
-  padding-left: 5vw;
-}
-.progress-bar {
-  width: 40vw;
-  height: 12px;
-  background-color: #ccc;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  margin: 12px;
-  overflow: hidden;
-}
-.progress {
-  height: 100%;
-  background-color: #08073a;
-  border-radius: 5px;
-  padding: 2px;
-}
-.bar-description {
-  font-size: 12pt;
-}
-#bar-description{
-  margin-top: 14px;
-  color: darkblue;
-}
+  /*progress bars*/
+  #skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    color: black;
+    padding: 10px 0 80px 13%;
+  }
 
+  .skills {
+    text-align: right;
+    line-height: 50px;
+  }
 
-/*--------my services------------*/
-#my-services{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  margin: 2rem 8rem 1rem 8rem;
-  padding: 1rem 0 2rem 0;
-  text-align: center;
-}
-.service{
-  font-family: 'Noto Sans JP', sans-serif;
-  background-color: transparent;
-  color: black;
-  padding: 0.5rem;
-}
-.service img{
-  filter: brightness(0.9) invert(1) sepia(.9) hue-rotate(100deg) saturate(250%);
-}
-.service-description{
-  font-family: 'Noto Sans JP', sans-serif;
-  background-color: white;
-  opacity: 0.7;
-  color: black;
-  padding: 2rem;
-  border-radius: 2vw;
-}
-.service-description h2 p{
-  border: 1px #0b03fc solid;
-}
-.service-description h2{
-
-}
-.service-description img{
-  filter: brightness(0.7) invert(.6) sepia(.8) hue-rotate(50deg) saturate(50%);
-}
-
-@media screen and (max-width: 600px){
-  #my-services{
-    margin: 5%;
-    padding: 2%;
+  .skills a {
+    background-color: #070379;
+    color: darkblue;
+    padding: 14px 25px;
     text-align: center;
-    justify-content: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px;
   }
-  .service{
-    color: #e8e7e7;
-    padding: 5%;
-    margin: 10%;
+
+  a:hover,
+  a:active {
+    background-color: #08073a;
   }
-  .service-description{
-    padding: 5px;
-    margin: 20px;
+
+  .skills button {
+    border-radius: 30px;
+    border: none;
+  }
+
+  .progress-and-bar {
+    display: flex;
+    text-align: right;
+    padding-left: 5vw;
+  }
+
+  .progress-bar {
+    width: 40vw;
+    height: 12px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin: 12px;
+    overflow: hidden;
+  }
+
+  .progress {
+    height: 100%;
+    background-color: #08073a;
+    border-radius: 5px;
+    padding: 2px;
+  }
+
+  .bar-description {
+    font-size: 12pt;
+  }
+
+  #bar-description {
+    margin-top: 14px;
+    color: darkblue;
+  }
+
+
+  /*--------my services------------*/
+  #my-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 2rem 8rem 1rem 8rem;
+    padding: 1rem 0 2rem 0;
+    text-align: center;
+  }
+
+  .service {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: transparent;
+    color: black;
+    padding: 0.5rem;
+  }
+
+  .service img {
+    filter: brightness(0.9) invert(1) sepia(.9) hue-rotate(100deg) saturate(250%);
+  }
+
+  .service-description {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: white;
+    opacity: 0.7;
+    color: black;
+    padding: 2rem;
     border-radius: 2vw;
   }
-  .service-description h2 p{
+
+  .service-description h2 p {
     border: 1px #0b03fc solid;
   }
-  #my-services h2{
-    font-size: 20px;
+
+  .service-description h2 {}
+
+  .service-description img {
+    filter: brightness(0.7) invert(.6) sepia(.8) hue-rotate(50deg) saturate(50%);
   }
-  #my-services p{
-    font-size: 13px;
+
+  @media screen and (max-width: 600px) {
+    #my-services {
+      margin: 5%;
+      padding: 2%;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .service {
+      color: #e8e7e7;
+      padding: 5%;
+      margin: 10%;
+    }
+
+    .service-description {
+      padding: 5px;
+      margin: 20px;
+      border-radius: 2vw;
+    }
+
+    .service-description h2 p {
+      border: 1px #0b03fc solid;
+    }
+
+    #my-services h2 {
+      font-size: 20px;
+    }
+
+    #my-services p {
+      font-size: 13px;
+    }
   }
-}
 
 
-/*--------Recent work-----------*/
+  /*--------Recent work-----------*/
   * {
     box-sizing: border-box;
   }
+
   #recent-works {
     font-family: 'Noto Sans JP', sans-serif;
     background-color: #fef8f8;
   }
-#recent-works h1{
-  padding-top: 10rem;
-  color: #08073a;
-}
+
+  #recent-works h1 {
+    padding-top: 10rem;
+    color: #08073a;
+  }
+
   .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -727,6 +850,7 @@ a:hover, a:active {
     list-style-type: none;
     grid-auto-columns: 50px;
   }
+
   .card {
     position: relative;
     display: block;
@@ -736,10 +860,12 @@ a:hover, a:active {
     text-decoration: none;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   }
+
   .card__image {
     width: 100%;
     height: auto;
   }
+
   .card__overlay {
     position: absolute;
     bottom: 0;
@@ -751,9 +877,11 @@ a:hover, a:active {
     transform: translateY(100%);
     transition: .3s ease-in-out;
   }
+
   .card:hover .card__overlay {
     transform: translateY(0);
   }
+
   .card__header {
     position: relative;
     display: flex;
@@ -774,24 +902,29 @@ a:hover, a:active {
     right: 0;
     z-index: 1;
   }
+
   .card__arc path {
     fill: var(--surface-color);
     /*d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");*/
   }
+
   .card:hover .card__header {
     transform: translateY(0);
   }
+
   .card__thumb {
     flex-shrink: 0;
     width: 45px;
     height: 47px;
     border-radius: 50%;
   }
+
   .card__title {
     font-size: 20px;
     margin: 0 0 .2em;
     color: #7a2f54;
   }
+
   .card__tagline {
     display: block;
     margin: 0.5em 0;
@@ -799,10 +932,12 @@ a:hover, a:active {
     font-size: .8em;
     color: #D7BDCA;
   }
+
   .card__status {
     font-size: .8em;
     color: #D7BDCA;
   }
+
   .card__description {
     padding: 0 2em 2em;
     margin: 0;
@@ -814,246 +949,285 @@ a:hover, a:active {
     overflow: hidden;
   }
 
-  
+
 
 
   /*--------footer------*/
-#footer{
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
-.footer-section {
-  background: #151414;
-  position: relative;
-  margin-top: 50px;
-}
-#blocks{
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  padding-top: 50px;
-}
-#first-block{
-  width: 30%;
-  text-align: center;
-  padding: 10px;
-}
-.footer-social-icon img{
-  max-width: 30px;
-}
-#first-block img{
-  background-color: #f1f0f0;
-}
-#second-block{
-  width: 70%;
-  margin-left: 10px;
-}
-.first-block{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
-  border-bottom: 1px solid #646363;
-  margin-left: 10px;
-}
-.second-block{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  margin-left: 10px;
-  padding: 40px 5px 10px 5px;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
-}
-
-.footer-subscribe{
-  width: 60%;
-  height: auto;
-  padding: 5px;
-  margin-left: 2%;
-  margin-right: 4%;
-  text-align: center;
-}
-.useful-links{
-  width: 30%;
-  height: auto;
-  padding: 5px;
-  margin-right: 2%;
-  text-align: center;
-  justify-content: left;
-  border-right: 1px solid #ff5e14;
-  border-left: 1px solid #ff5e14;
-}
-
-.footer-logo img,
-.cta-text img,
-.footer-social-icon img{
-  background-color: #757575;
-  border-radius: 50%;
-}
-.footer-section a{
-  text-decoration: none;
-  color: #757575;
-}
-footer ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.cta-text h4 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 2px;
-}
-.cta-text span {
-  color: #757575;
-  font-size: 15px;
-}
-.footer-logo{
-  margin-bottom: 20px;
-}
-.footer-logo img {
-  max-width: 70px;
-}
-.footer-text p {
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #7e7e7e;
-  line-height: 28px;
-}
-.footer-social-icon span {
-  color: #fff;
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 10px;
-}
-.footer-widget-heading h3 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  position: relative;
-  margin-left: 0;
-}
-.subscribe-form {
-  position: relative;
-  overflow: hidden;
-}
-.subscribe-form input {
-  width: 100%;
-  padding: 14px 28px;
-  background: #2E2E2E;
-  border: 1px solid #2E2E2E;
-  color: #fff;
-}
-.subscribe-form button {
-  position: absolute;
-  right: 0;
-  background: #ff5e14;
-  padding: 1px;
-  border: 1px solid #ff5e14;
-  top: 0;
-  cursor: pointer;
-}
-.subscribe-form button i {
-  color: #fff;
-  font-size: 22px;
-  transform: rotate(-6deg);
-}
-.copyright-area{
-  background: #202020;
-  padding: 10px 0;
-  text-align: center;
-  border-top: 1px solid #646363;
-}
-.copyright-text p {
-  margin: 0;
-  font-size: 14px;
-  color: #878787;
-}
-.copyright-text p a{
-  color: #ff5e14;
-}
-.footer-menu li {
-  display: inline-block;
-  margin-left: 1px;
-}
-.footer-menu li:hover a{
-  color: #ff5e14;
-}
-.footer-menu li a {
-  font-size: 14px;
-  color: #b7b7b7;
-}
-
-
-@media screen and (max-width: 600px) {
-  .footer-social-icon img{
-    max-width: 30px;
-  }
-  .footer-logo img{
-    max-width: 45px;
-  }
-  .footer-text p {
+  #footer {
     padding: 0;
+    margin: 0;
+    overflow: hidden;
   }
-  #blocks{
+
+  .footer-section {
+    background: #151414;
+    position: relative;
+    margin-top: 50px;
+  }
+
+  #blocks {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    text-align: center;
+    padding-top: 50px;
   }
-  #first-block{
-    width: 100%;
-    padding: 20px;
+
+  #first-block {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
   }
-  .first-block{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 20%;
-  }
-  .first-block img{
+
+  .footer-social-icon img {
     max-width: 30px;
   }
+
+  #first-block img {
+    background-color: #f1f0f0;
+  }
+
+  #second-block {
+    width: 70%;
+    margin-left: 10px;
+  }
+
+  .first-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    border-bottom: 1px solid #646363;
+    margin-left: 10px;
+  }
+
+  .second-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    padding: 40px 5px 10px 5px;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .footer-subscribe {
+    width: 60%;
+    height: auto;
+    padding: 5px;
+    margin-left: 2%;
+    margin-right: 4%;
+    text-align: center;
+  }
+
+  .useful-links {
+    width: 30%;
+    height: auto;
+    padding: 5px;
+    margin-right: 2%;
+    text-align: center;
+    justify-content: left;
+    border-right: 1px solid #ff5e14;
+    border-left: 1px solid #ff5e14;
+  }
+
+  .footer-logo img,
+  .cta-text img,
+  .footer-social-icon img {
+    background-color: #757575;
+    border-radius: 50%;
+  }
+
+  .footer-section a {
+    text-decoration: none;
+    color: #757575;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
   .cta-text h4 {
-    font-size: 14px;
+    color: #fff;
+    font-size: 20px;
     font-weight: 600;
+    margin-bottom: 2px;
   }
-  .cta-text span{
-    font-size: 12px;
+
+  .cta-text span {
+    color: #757575;
+    font-size: 15px;
   }
-  .second-block{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
+
+  .footer-logo {
+    margin-bottom: 20px;
   }
-  .footer-subscribe{
-    width: 100%;
-    height: auto;
-    padding: 2px;
-    margin-right: 0;
+
+  .footer-logo img {
+    max-width: 70px;
   }
-  .useful-links{
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin-right: 0;
-  }
-  .useful-links h3{
+
+  .footer-text p {
+    margin-bottom: 5px;
     font-size: 14px;
-    font-weight: 600;
+    color: #7e7e7e;
+    line-height: 28px;
   }
-}
-  
+
+  .footer-social-icon span {
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+  }
+
+  .footer-widget-heading h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 0;
+  }
+
+  .subscribe-form {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;
+    color: #fff;
+  }
+
+  .subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 1px;
+    border: 1px solid #ff5e14;
+    top: 0;
+    cursor: pointer;
+  }
+
+  .subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+  }
+
+  .copyright-area {
+    background: #202020;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #646363;
+  }
+
+  .copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #878787;
+  }
+
+  .copyright-text p a {
+    color: #ff5e14;
+  }
+
+  .footer-menu li {
+    display: inline-block;
+    margin-left: 1px;
+  }
+
+  .footer-menu li:hover a {
+    color: #ff5e14;
+  }
+
+  .footer-menu li a {
+    font-size: 14px;
+    color: #b7b7b7;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .footer-social-icon img {
+      max-width: 30px;
+    }
+
+    .footer-logo img {
+      max-width: 45px;
+    }
+
+    .footer-text p {
+      padding: 0;
+    }
+
+    #blocks {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #first-block {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .first-block {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-left: 20%;
+    }
+
+    .first-block img {
+      max-width: 30px;
+    }
+
+    .cta-text h4 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .cta-text span {
+      font-size: 12px;
+    }
+
+    .second-block {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+    }
+
+    .footer-subscribe {
+      width: 100%;
+      height: auto;
+      padding: 2px;
+      margin-right: 0;
+    }
+
+    .useful-links {
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin-right: 0;
+    }
+
+    .useful-links h3 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
 </style>
 
 
@@ -1080,7 +1254,7 @@ footer ul {
           </a>
         </div>
         <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
-          <img src="https://img.icons8.com/?size=1x&id=lgtp4VE6DKYl&format=png" width="45" height="45" alt="menu"/>
+          <img src="https://img.icons8.com/?size=1x&id=lgtp4VE6DKYl&format=png" width="45" height="45" alt="menu" />
         </button>
       </div>
     </div>
@@ -1090,19 +1264,19 @@ footer ul {
   <main id="main-content">
     <section id="overview">
       <div class="overview">
-            <h1>My name is Masebba A. Nasser</h1>
-            <h3>Web Designer, Application & Web Developer </h3>
-            <p>Invest your time and efforts on running your business. Leave the Designing to me.
-            </p>
+        <h1>My name is Masebba A. Nasser</h1>
+        <h3>Web and Mobile Application Developer</h3>
+        <p>Invest your time and efforts on running your business. Leave the Designing and Development to me.
+        </p>
       </div>
 
       <div class="get-quote">
-          <a href="contact.html">
+        <a href="contact.html">
           <button class="get-free-quote">
             Get a Free Quote
           </button></a>
 
-          <a href="contact.html">
+        <a href="contact.html">
           <button class="lear-more">
             Learn More
           </button>
@@ -1111,175 +1285,201 @@ footer ul {
 
 
       <div class="icon-buttons">
-          <div class="trusted">
-            <img src="https://img.icons8.com/?size=1x&id=odlWsjaUL8mG&format=png" alt="icon">
-              Trusted
-          </div>
-          <div class="experienced">
-            <img src="https://img.icons8.com/?size=1x&id=odlWsjaUL8mG&format=png" alt="icon">
-              Experienced
-          </div>
-          <div class="professional">
-            <img src="https://img.icons8.com/?size=1x&id=odlWsjaUL8mG&format=png" alt="icon">
-              Professional
-          </div>
+        <div class="trusted">
+          <img src="https://img.icons8.com/?size=1x&id=odlWsjaUL8mG&format=png" alt="icon">
+          Trusted
+        </div>
+        <div class="experienced">
+          <img src="https://img.icons8.com/?size=1x&id=odlWsjaUL8mG&format=png" alt="icon">
+          Experienced
+        </div>
+        <div class="professional">
+          <img src="https://img.icons8.com/?size=1x&id=odlWsjaUL8mG&format=png" alt="icon">
+          Professional
+        </div>
       </div>
     </section>
 
-  <section id="services">
-    <div class="services">
-      <div class="web-design">
-        <div class="description">
-          <img src="https://img.icons8.com/?size=1x&id=9chWbutoYVot&format=png" alt="web design">
-          <h4>App Development</h4>
-          <p>UX & UI, Interaction Designs, Mockup, Wire-framing and Prototyping.</p>
+    <section id="services">
+      <div class="services">
+        <div class="web-design">
+          <div class="description">
+            <img src="https://img.icons8.com/?size=1x&id=9chWbutoYVot&format=png" alt="web design">
+            <h4>App Development</h4>
+            <p>UX & UI, Interaction Designs, Mockup, Wire-framing and Prototyping.</p>
+          </div>
+          <div class="counter">
+            <h2>073</h2>
+            <h4>Projects Finished</h4>
+          </div>
         </div>
-        <div class="counter">
-          <h2>073</h2><h4>Projects Finished</h4>
-        </div>
-      </div>
 
-      <div class="web-development">
-        <div class="description">
-          <img src="https://img.icons8.com/?size=1x&id=v81HcAIQnRw8&format=png" alt="web development">
-          <h4>WEB DEVELOPMENT</h4>
-          <p>Responsive Design, SEO optimization, Analytics, maintenance and Back End management.</p>
+        <div class="web-development">
+          <div class="description">
+            <img src="https://img.icons8.com/?size=1x&id=v81HcAIQnRw8&format=png" alt="web development">
+            <h4>Web Development</h4>
+            <p>Responsive Design, SEO optimization, Analytics, maintenance and Back End management.</p>
+          </div>
+          <div class="counter">
+            <h2>056</h2>
+            <h4>Projects Finished</h4>
+          </div>
         </div>
-        <div class="counter">
-          <h2>056</h2><h4>Projects Finished</h4>
-        </div>
-      </div>
 
-      <div class="graphic-design">
-        <div class="description">
-          <img src="https://img.icons8.com/?size=1x&id=QVobCUiSKNwK&format=png" alt="graphic design">
-          <h4>GRAPHIC DESIGN</h4>
-          <p>Brochure, Posters and social media posts, Business Card, Flyers, Calendars, Other.</p>
-        </div>
-        <div class="counter">
-          <h2>248</h2><h4>Projects Finished</h4>
+        <div class="graphic-design">
+          <div class="description">
+            <img src="https://img.icons8.com/?size=1x&id=QVobCUiSKNwK&format=png" alt="graphic design">
+            <h4>Graphic Design</h4>
+            <p>Brochure, Posters and social media posts, Business Card, Flyers, Calendars, Other.</p>
+          </div>
+          <div class="counter">
+            <h2>248+</h2>
+            <h4>Projects Finished</h4>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
 
     <section id="about-me">
       <div id="why-me">
-            <div class="my-image">
-              <img src="https://i.imgur.com/cE5abYw.png" alt="Masebba">
-            </div>
+        <div class="my-image">
+          <img src="https://i.imgur.com/cE5abYw.png" alt="Masebba">
+        </div>
 
-          <div class="accordion">
-            <div class="about-me">
-              <h1>A Little About Me</h1>
-              <p>I am the freelancer you’re looking for. A creative Web Designer and Web Developer who turns ideas into valuable websites for clients like you. I love building stunning websites for various brands (Landing Page, eCommerce, Non-Profit, personal blogs, etc.). Check my Website work here. I am also a Graphics Designer of all types (Calendars, Business cards, Flyers, Banners, Brochures, Posters etc.)</p>
-            </div>
-              <nav class="accordion arrows">
-                <header class="box">
-                  <label for="acc-close" class="box-title">What you need to know</label>
-                </header>
-
-                <input type="radio" name="accordion" id="cb1" />
-                <section class="box">
-                  <label class="box-title" for="cb1">Why Choose Me</label>
-                  <label class="box-close" for="acc-close"></label>
-                  <div class="box-content">
-                    <ul>
-                      <li>I work extremely fast with good custom editing skills.</li>
-                      <li>I have a great design sense for stunning designs.</li>
-                      <li>Quality Assurance</li>
-                      <li>User Interface and User Experience Designer</li>
-                    </ul>
-                  </div>
-                </section>
-
-                <input type="radio" name="accordion" id="cb2" />
-                <section class="box">
-                  <label class="box-title" for="cb2">What else do I provide?</label>
-                  <label class="box-close" for="acc-close"></label>
-                  <div class="box-content">
-                    <ul>
-                      <li>I will write a “Read Me” note to provide you with knowledge on how to use the website.</li>
-                      <li>You will easily edit and modify your website. I will be available for 15 days after the 
-                          project is done to take care of any query. No programming knowledge needed</li>
-                    </ul>
-                  </div>
-                </section>
-                <input type="radio" name="accordion" id="cb3" />
-                <section class="box">
-                  <label class="box-title" for="cb3">You don't have any design Concept?</label>
-                  <label class="box-close" for="acc-close"></label>
-                  <div class="box-content">
-                    <ul>
-                      <li>You don’t have to worry. I will take care it.</li>
-                      <li> I highly recommended that you purchase the domain and hosting by yourself. 
-                          But I can recommend a good domain and hosting providers in can you are unable.</li>
-                    </ul>
-                  </div>
-                </section>
-
-                <input type="radio" name="accordion" id="cb4" />
-                <section class="box">
-                  <label class="box-title" for="cb4">Other Practical Knowledge</label>
-                  <label class="box-close" for="acc-close"></label>
-                  <div class="box-content">
-                    <ul>
-                      <li>JavaScript and Python Web Application</li>
-                      <li>Programming Essentials In Python, Java, C and JavaScript languages</li>
-                      <li>Front End Development</li>
-                      <li>Git and Github Knowledge</li>
-                      <li>DevOps Knowledge</li>
-                      <li>Cybersecurity Fundamentals</li>
-                      <li>WordPress CMS Development</li>
-                      <li>Knowledge of back end Hosting and management</li>
-                    </ul>
-                  </div>
-                </section>
-
-                <input type="radio" name="accordion" id="acc-close" />
-              </nav>
-            </div>
-
+        <div class="accordion">
+          <div class="about-me">
+            <h1>A Little About Me</h1>
+            <p>I am the freelancer you’re looking for. A creative App and Web Developer who turns ideas into
+              valuable systems for clients like you. I love building stunning systems for various brands (Mobile or Web
+              applications, Landing
+              Page, eCommerce, Non-Profit, personal blogs, etc.).</p>
           </div>
+          <nav class="accordion arrows">
+            <header class="box">
+              <label for="acc-close" class="box-title">What you need to know</label>
+            </header>
+
+            <input type="radio" name="accordion" id="cb1" />
+            <section class="box">
+              <label class="box-title" for="cb1">Why Choose Me</label>
+              <label class="box-close" for="acc-close"></label>
+              <div class="box-content">
+                <ul>
+                  <li>I work extremely fast with good custom editing skills.</li>
+                  <li>I have a great design sense and client centered.</li>
+                  <li>Quality Assurance and I allow unlimited change request>
+                  <li>User Interface and User Experience Designer</li>
+                </ul>
+              </div>
+            </section>
+
+            <input type="radio" name="accordion" id="cb2" />
+            <section class="box">
+              <label class="box-title" for="cb2">What else do I provide?</label>
+              <label class="box-close" for="acc-close"></label>
+              <div class="box-content">
+                <ul>
+                  <li>I will write a “Read Me” note to provide you with knowledge on how to use the website.</li>
+                  <li>You will easily edit and modify your website. I will be available for 15 days after the
+                    project is done to take care of any query. No programming knowledge needed</li>
+                </ul>
+              </div>
+            </section>
+            <input type="radio" name="accordion" id="cb3" />
+            <section class="box">
+              <label class="box-title" for="cb3">You don't have any design Concept?</label>
+              <label class="box-close" for="acc-close"></label>
+              <div class="box-content">
+                <ul>
+                  <li>You don’t have to worry. I will take care it.</li>
+                  <li> I highly recommended that you purchase the domain and hosting by yourself.
+                    But I can recommend a good domain and hosting providers in can you are unable.</li>
+                </ul>
+              </div>
+            </section>
+
+            <input type="radio" name="accordion" id="cb4" />
+            <section class="box">
+              <label class="box-title" for="cb4">Other Practical Knowledge</label>
+              <label class="box-close" for="acc-close"></label>
+              <div class="box-content">
+                <ul>
+                  <li>JavaScript and Python Web Application</li>
+                  <li>Programming Essentials In Python, Java, C and JavaScript languages</li>
+                  <li>Front End Development</li>
+                  <li>Git and Github Knowledge</li>
+                  <li>DevOps Knowledge</li>
+                  <li>Cybersecurity Fundamentals</li>
+                  <li>WordPress CMS Development</li>
+                  <li>Knowledge of back end Hosting and management</li>
+                </ul>
+              </div>
+            </section>
+
+            <input type="radio" name="accordion" id="acc-close" />
+          </nav>
+        </div>
+
+      </div>
     </section>
 
     <section id="skills">
-          <div class="skills">
-            <h2>AREAS OF EXPERTISE</h2>
-            <hr>
-            <h3>SOME OF MY SKILLS</h3>
-            <button>
-              <a href="contact.html">Hire Me</a>
-            </button>
-          </div>
+      <div class="skills">
+        <h2>AREAS OF EXPERTISE</h2>
+        <hr>
+        <h3>SOME OF MY SKILLS</h3>
+        <button>
+          <a href="contact.html">Hire Me</a>
+        </button>
+      </div>
 
       <div class="progress-and-bar">
-          <div id="bar-description">
-              <div class="bar-description">HTML</div>
-              <div class="bar-description">CSS</div>
-              <div class="bar-description">JavaScript</div>
-              <div class="bar-description">Python</div>
-              <div class="bar-description">Java</div>
-              <div class="bar-description">C</div>
-              <div class="bar-description">DevOps</div>
-              <div class="bar-description">PHP</div>
-              <div class="bar-description">MySQL</div>
-              <div class="bar-description">WordPress</div>
-          </div>
+        <div id="bar-description">
+          <div class="bar-description">HTML</div>
+          <div class="bar-description">CSS</div>
+          <div class="bar-description">JavaScript</div>
+          <div class="bar-description">Python</div>
+          <div class="bar-description">Java</div>
+          <div class="bar-description">C</div>
+          <div class="bar-description">DevOps</div>
+          <div class="bar-description">PHP</div>
+          <div class="bar-description">MySQL</div>
+          <div class="bar-description">WordPress</div>
+        </div>
 
-          <div class="bars">
-              <div class="progress-bar"><div class="progress" id="progress1"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress2"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress3"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress4"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress5"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress6"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress7"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress8"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress9"></div></div>
-              <div class="progress-bar"><div class="progress" id="progress10"></div></div>
+        <div class="bars">
+          <div class="progress-bar">
+            <div class="progress" id="progress1"></div>
           </div>
+          <div class="progress-bar">
+            <div class="progress" id="progress2"></div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" id="progress3"></div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" id="progress4"></div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" id="progress5"></div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" id="progress6"></div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" id="progress7"></div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" id="progress8"></div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" id="progress9"></div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress" id="progress10"></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1288,8 +1488,10 @@ footer ul {
       <div class="service">
         <img src="https://img.icons8.com/?size=1x&id=GKFN2Gk1rPIh&format=png" alt="Services">
         <h2>My Services</h2>
-        <p>Full website creation, Application Development, WordPress install, User-friendly Layout, Fully Responsive, <em><b>Speed
-          optimization, Import Demo Contents, E-commerce by Woo commerce,</b></em> Redesign WordPress</p>
+        <p>Full website creation, Application Development, WordPress install, User-friendly Layout, Fully Responsive,
+          <em><b>Speed
+              optimization, Import Demo Contents, E-commerce by Woo commerce,</b></em> Redesign WordPress
+        </p>
       </div>
 
       <div class="service-description">
@@ -1307,13 +1509,15 @@ footer ul {
       <div class="service-description">
         <img src="https://img.icons8.com/?size=1x&id=vK5is4aqGzbO&format=png" alt="WordPress">
         <h2>CMS Development</h2>
-        <p>WordPress Expert, Sigma, Installing themes and Plugins, HTML to WordPress, Domain and Host transfer, Mobile Responsiveness.</p>
+        <p>WordPress Expert, Sigma, Installing themes and Plugins, HTML to WordPress, Domain and Host transfer, Mobile
+          Responsiveness.</p>
       </div>
 
       <div class="service-description">
         <img src="https://img.icons8.com/?size=1x&id=9944&format=png" alt="Assistant">
         <h2>Virtual Assistance</h2>
-        <p>Social media, Data collection nd data mining, create and format Excel sheets, content writing and proofreading, Web research and mail management.</p>
+        <p>Social media, Data collection nd data mining, create and format Excel sheets, content writing and
+          proofreading, Web research and mail management.</p>
       </div>
 
       <div class="service-description">
@@ -1325,135 +1529,138 @@ footer ul {
 
     <section id="recent-works">
       <h1 style="text-align: center;">RECENT WORKS</h1>
-    <ul class="cards">
-      <li>
-        <a href="naanghirisa.org" class="card">
-          <img src="https://i.imgur.com/9WoY4Sa.png" class="card__image" alt="Naanghirisa" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">Non Profit</h3>
-                <span class="card__status">WordPress & Elementor</span>
+      <ul class="cards">
+        <li>
+          <a href="naanghirisa.org" class="card">
+            <img src="https://i.imgur.com/9WoY4Sa.png" class="card__image" alt="Naanghirisa" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
+                <div class="card__header-text">
+                  <h3 class="card__title">Non Profit</h3>
+                  <span class="card__status">WordPress & Elementor</span>
+                </div>
               </div>
+              <p class="card__description">Naanghirisa is a not for profit local NGO that helps
+                less privileged girls get post-primary education</p>
             </div>
-            <p class="card__description">Naanghirisa is a not for profit local NGO that helps
-              less privileged girls get post-primary education</p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="http://masebba.unaux.com/" class="card">
-          <img src="https://i.imgur.com/GzI4V5I.png" class="card__image" alt="Masebba" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">Portfolio</h3>
-                <span class="card__status">HTML, CSS and JS</span>
+          </a>
+        </li>
+        <li>
+          <a href="http://masebba.unaux.com/" class="card">
+            <img src="https://i.imgur.com/GzI4V5I.png" class="card__image" alt="Masebba" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
+                <div class="card__header-text">
+                  <h3 class="card__title">Portfolio</h3>
+                  <span class="card__status">HTML, CSS and JS</span>
+                </div>
               </div>
+              <p class="card__description">This is a WordPress portfolio made two years ago. I have cloned it to form
+                this one</p>
             </div>
-            <p class="card__description">This is a WordPress portfolio made two years ago. I have cloned it to form this one</p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="https://codepen.io/masebba/pen/WNYXrzp" class="card">
-          <img src="https://i.imgur.com/ufszNQn.png" class="card__image" alt="Contact form" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">Contact Form</h3>
-                <span class="card__tagline"></span>
-                <span class="card__status">HTML, CSS and JS</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://codepen.io/masebba/pen/WNYXrzp" class="card">
+            <img src="https://i.imgur.com/ufszNQn.png" class="card__image" alt="Contact form" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
+                <div class="card__header-text">
+                  <h3 class="card__title">Contact Form</h3>
+                  <span class="card__tagline"></span>
+                  <span class="card__status">HTML, CSS and JS</span>
+                </div>
               </div>
+              <p class="card__description">This is a responsive contact form developed using HTML, CSS and JavaScript
+              </p>
             </div>
-            <p class="card__description">This is a responsive contact form developed using HTML, CSS and JavaScript</p>
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="card">
-          <img src="https://i.imgur.com/g8M5S7S.png" class="card__image" alt="eCommerce" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">eCommerce</h3>
-                <span class="card__status">WordPress & Elementor</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="card">
+            <img src="https://i.imgur.com/g8M5S7S.png" class="card__image" alt="eCommerce" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
+                <div class="card__header-text">
+                  <h3 class="card__title">eCommerce</h3>
+                  <span class="card__status">WordPress & Elementor</span>
+                </div>
               </div>
+              <p class="card__description">This is an eCommerce website developed with WordPress and Elementor</p>
             </div>
-            <p class="card__description">This is an eCommerce website developed with WordPress and Elementor</p>
-          </div>
-        </a>
-      </li>
+          </a>
+        </li>
 
-      <li>
-        <a href="http://groupone.liveblog365.com/admi-pannel.html" class="card">
-          <img src="https://i.imgur.com/reJHYcJ.png" class="card__image" alt="Dashboard" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">Dashboard</h3>
-                <span class="card__status">HTML, CSS and JS</span>
+        <li>
+          <a href="http://groupone.liveblog365.com/admi-pannel.html" class="card">
+            <img src="https://i.imgur.com/reJHYcJ.png" class="card__image" alt="Dashboard" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
+                <div class="card__header-text">
+                  <h3 class="card__title">Dashboard</h3>
+                  <span class="card__status">HTML, CSS and JS</span>
+                </div>
               </div>
+              <p class="card__description">An extract from an ad space booking system developed with HTML, CSS and JS
+              </p>
             </div>
-            <p class="card__description">An extract from an ad space booking system developed with HTML, CSS and JS</p>
-          </div>
-        </a>
-      </li>
+          </a>
+        </li>
 
-      <li>
-        <a href="https://codepen.io/masebba/pen/YzRMGNr" class="card">
-          <img src="https://i.imgur.com/2ftFYuR.png" class="card__image" alt="footer" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">Footer Design</h3>
-                <span class="card__status">HTML, CSS and JS</span>
+        <li>
+          <a href="https://codepen.io/masebba/pen/YzRMGNr" class="card">
+            <img src="https://i.imgur.com/2ftFYuR.png" class="card__image" alt="footer" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
+                <div class="card__header-text">
+                  <h3 class="card__title">Footer Design</h3>
+                  <span class="card__status">HTML, CSS and JS</span>
+                </div>
               </div>
+              <p class="card__description">An extract from this portfolio developed with HTML, CSS and JS</p>
             </div>
-            <p class="card__description">An extract from this portfolio developed with HTML, CSS and JS</p>
-          </div>
-        </a>
-      </li>
+          </a>
+        </li>
 
-      <li>
-        <a href="https://codepen.io/masebba/pen/abQBWmR" class="card">
-          <img src="https://i.imgur.com/KRxQpRs.png" class="card__image" alt="About page" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">About Page</h3>
-                <span class="card__status">HTML, CSS and JS</span>
+        <li>
+          <a href="https://codepen.io/masebba/pen/abQBWmR" class="card">
+            <img src="https://i.imgur.com/KRxQpRs.png" class="card__image" alt="About page" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
+                <div class="card__header-text">
+                  <h3 class="card__title">About Page</h3>
+                  <span class="card__status">HTML, CSS and JS</span>
+                </div>
               </div>
+              <p class="card__description">CSSZEN gerden inspired design implementation</p>
             </div>
-            <p class="card__description">CSSZEN gerden inspired design implementation</p>
-          </div>
-        </a>
-      </li>
+          </a>
+        </li>
 
-      <li>
-        <a href="ucesco.org" class="card">
-          <img src="https://i.imgur.com/XYWliHo.png" class="card__image" alt="Non-Profit" />
-          <div class="card__overlay">
-            <div class="card__header">
-              <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
-              <div class="card__header-text">
-                <h3 class="card__title">Non-Profit</h3>
-                <span class="card__status">WordPress/Elementor</span>
+        <li>
+          <a href="ucesco.org" class="card">
+            <img src="https://i.imgur.com/XYWliHo.png" class="card__image" alt="Non-Profit" />
+            <div class="card__overlay">
+              <div class="card__header">
+                <img class="card__thumb" src="https://i.imgur.com/cVmQ5j1.jpg" alt="Masebba" />
+                <div class="card__header-text">
+                  <h3 class="card__title">Non-Profit</h3>
+                  <span class="card__status">WordPress/Elementor</span>
+                </div>
               </div>
+              <p class="card__description">Volunteered to implement the new design for the organisan's Website</p>
             </div>
-            <p class="card__description">Volunteered to implement the new design for the organisan's Website</p>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </section>
+          </a>
+        </li>
+      </ul>
+    </section>
 
 
 
@@ -1462,54 +1669,58 @@ footer ul {
 
 
 
-<section id="footer">
-  <footer class="footer-section">
-    <div id="blocks">
-      <div id="first-block">
-        <div class="footer-logo">
-          <a href="index.html"><img src="https://i.imgur.com/PI5LP48.png" class="img-fluid" alt="logo"></a>
-        </div>
-        <div class="footer-text">
-          <p>I am the freelancer you’re looking for. A creative Web Designer and
-            Web Developer who turns ideas into valuable websites for clients like you.
-            Landing Page, eCommerce, Non-Profit, personal blogs, etc.
-          </p>
-        </div>
-        <div class="footer-social-icon">
-          <span>Follow on Socials</span>
-          <a href="https://www.facebook.com/masebbaa"><img src="https://img.icons8.com/?size=1x&id=uLWV5A9vXIPu&format=png" alt="Facebook"></a>
-          <a href="https://twitter.com/MA_SE_BBA" ><img src="https://img.icons8.com/?size=1x&id=114450&format=png" alt="Twitter"></a>
-          <a href="mailto: masternasser2@gmail.com"><img src="https://img.icons8.com/?size=1x&id=63779&format=png" alt="Google"></a>
-          <a href="https://github.com/Masebba/Masebba.github.io">
-                   <img src="https://img.icons8.com/?size=1x&id=bVGqATNwfhYq&format=png" alt="GitHub"></a>
-          <a href="https://codepen.io/masebba"><img src="https://img.icons8.com/?size=1x&id=38382&format=png" alt="codepen"></a>
-        </div>
-      </div>
-      <div id="second-block">
-        <div id="bloc">
-          <div class="first-block">
-            <div class="single-cta">
-              <div class="cta-text">
-                <img src="https://img.icons8.com/?size=1x&id=7891&format=png" alt="find me">
-                <h4>Find Me</h4>
-                <span>masternasser@gmail.com</span>
-              </div>
-            </div>
-            <div class="single-cta">
-              <div class="cta-text">
-                <img src="https://img.icons8.com/?size=1x&id=XP4jN4xCBd2G&format=png" alt="call me">
-                <h4>Call Me</h4>
-                <span>+256757466113</span>
-              </div>
-            </div>
-            <div class="single-cta">
-              <div class="cta-text">
-                <img src="https://img.icons8.com/?size=1x&id=124379&format=png" alt="email me">
-                <h4>Mail Me</h4>
-                <span>masternasser@gmail.com</span>
-              </div>
-            </div>
+  <section id="footer">
+    <footer class="footer-section">
+      <div id="blocks">
+        <div id="first-block">
+          <div class="footer-logo">
+            <a href="index.html"><img src="https://i.imgur.com/PI5LP48.png" class="img-fluid" alt="logo"></a>
           </div>
+          <div class="footer-text">
+            <p>I am the freelancer you’re looking for. A creative Web Designer and
+              Web Developer who turns ideas into valuable websites for clients like you.
+              Landing Page, eCommerce, Non-Profit, personal blogs, etc.
+            </p>
+          </div>
+          <div class="footer-social-icon">
+            <span>Follow on Socials</span>
+            <a href="https://www.facebook.com/masebbaa"><img
+                src="https://img.icons8.com/?size=1x&id=uLWV5A9vXIPu&format=png" alt="Facebook"></a>
+            <a href="https://twitter.com/MA_SE_BBA"><img src="https://img.icons8.com/?size=1x&id=114450&format=png"
+                alt="Twitter"></a>
+            <a href="mailto: masternasser2@gmail.com"><img src="https://img.icons8.com/?size=1x&id=63779&format=png"
+                alt="Google"></a>
+            <a href="https://github.com/Masebba/Masebba.github.io">
+              <img src="https://img.icons8.com/?size=1x&id=bVGqATNwfhYq&format=png" alt="GitHub"></a>
+            <a href="https://codepen.io/masebba"><img src="https://img.icons8.com/?size=1x&id=38382&format=png"
+                alt="codepen"></a>
+          </div>
+        </div>
+        <div id="second-block">
+          <div id="bloc">
+            <div class="first-block">
+              <div class="single-cta">
+                <div class="cta-text">
+                  <img src="https://img.icons8.com/?size=1x&id=7891&format=png" alt="find me">
+                  <h4>Find Me</h4>
+                  <span>masternasser@gmail.com</span>
+                </div>
+              </div>
+              <div class="single-cta">
+                <div class="cta-text">
+                  <img src="https://img.icons8.com/?size=1x&id=XP4jN4xCBd2G&format=png" alt="call me">
+                  <h4>Call Me</h4>
+                  <span>+256757466113</span>
+                </div>
+              </div>
+              <div class="single-cta">
+                <div class="cta-text">
+                  <img src="https://img.icons8.com/?size=1x&id=124379&format=png" alt="email me">
+                  <h4>Mail Me</h4>
+                  <span>masternasser@gmail.com</span>
+                </div>
+              </div>
+            </div>
             <div class="second-block">
               <div class="useful-links">
                 <div class="footer-widget-heading">
@@ -1534,33 +1745,34 @@ footer ul {
                     <label>
                       <input type="text" placeholder="Email Address">
                     </label>
-                    <button><i><img src="https://img.icons8.com/?size=1x&id=nnbkrcGxTSm8&format=png" alt="telegram plane"></i></button>
+                    <button><i><img src="https://img.icons8.com/?size=1x&id=nnbkrcGxTSm8&format=png"
+                          alt="telegram plane"></i></button>
                   </form>
                 </div>
               </div>
             </div>
 
-      </div>
-    </div>
-    </div>
-    <div class="copyright-area">
-      <div class="container">
-          <div class="copyright-text">
-              <p>Copyright &copy; 2023, All Right Reserved <a href="contact.html">Masebba +256757466113</a></p>
           </div>
-            <div class="footer-menu">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="index.html">Skills</a></li>
-                <li><a href="contact.html">Policy</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </div>
+        </div>
       </div>
-    </div>
-  </footer>
-</section>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="copyright-text">
+            <p>Copyright &copy; 2023, All Right Reserved <a href="contact.html">Masebba +256757466113</a></p>
+          </div>
+          <div class="footer-menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="project.html">Projects</a></li>
+              <li><a href="index.html">Skills</a></li>
+              <li><a href="contact.html">Policy</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
 
 
 
